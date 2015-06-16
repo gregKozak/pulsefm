@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	var volume = 100; //Default volume setting.
 	var tempVolume = volume; //Temporary volume, stores volume value for mute/unmute.
 	var playState = false // False for pause/stop, True for playing
@@ -14,14 +15,18 @@ $(document).ready(function() {
 	$(".station-link").click(function(e){
 		e.preventDefault();
 		var station = $(this).find('a').attr("href"); //Get station number
-		$(station).addClass("venue-show"); //Show venue info page
+		$(station).show(0,function(){
+			$(this).addClass("venue-show");  //Show venue info page
+		})
 		$("#main-page-wrapper").addClass("scale-down-wrapper"); //Animate main page scale down
 
 	});
 
 	$(".venue-top-bar").click(function(e){
 		e.preventDefault();
-		$(".venue-page-wrapper").removeClass("venue-show");
+		$(".venue-page-wrapper").removeClass("venue-show").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+			$(this).hide().unbind(); // HIDE and unbind previously binded transition-end callback
+		});
 		$("#main-page-wrapper").removeClass("scale-down-wrapper");
 	});
 

@@ -228,18 +228,17 @@ body {
 
 //Venue page
 .venue-page-wrapper {
+	display:none; //Firefox, IE fix
 	position: absolute;
 	top: 0%;
 	z-index: 10;
 	width: 100%;
-
-	@include single-transition(left, 0.7s, cubic-bezier(.6,0,.4,1));
-	@include transform(left(-100%));
+	@include single-transition(transform, 0.7s, cubic-bezier(.6,0,.4,1));
+	@include transform(translateX(-100%));
 }
 
-//for showing
 .venue-show {
-	left:0;
+	@include transform(translateX(0));
 }
 
 .venue-top-bar {

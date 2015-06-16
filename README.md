@@ -1,5 +1,6 @@
 # pulsefm
 Few changes regarding better interface handling:
+
 1. PLAY button (main page) and station name are different links:
 First one plays radio instantly, and second one transports to Venue details.
 This enables user to play different stations without going into necessary details.

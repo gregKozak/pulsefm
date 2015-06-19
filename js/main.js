@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$(".venue-top-bar").click(function(e){
 		e.preventDefault();
 		$("#main-page-wrapper").removeClass("scale-down-wrapper");
-		$(this).parent().removeClass("venue-show").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+		$(this).parent().removeClass("venue-show").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 			$(this).hide().unbind(); // HIDE and unbind previously binded transition-end callback
 		});
 		

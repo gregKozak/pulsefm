@@ -98,11 +98,29 @@ body {
 	background: url("../images/main_header.jpg") no-repeat;
 	@include background-size(cover);
 
-	h2 {
-		position: absolute;
-		bottom: -230px;
-		margin:0 auto;
+	.container {
+		div {
+		display:table;
+		position:absolute;
+		width:100%;
+		bottom:-260px;
 		text-align: center;
+		}
+
+	}
+	h2, h3 {
+		width:100%;
+		margin:0 auto;
+	}
+	h2 {
+		font-weight: 700 !important;
+		letter-spacing: 0.1rem;
+		font-size:4rem;
+		font-family: 'PT Sans', sans-serif;
+	}
+	h3 {
+		margin-top:20px;
+		bottom: -230px;
 		letter-spacing: 0.5rem;
 		@include trocchi-font(1.8rem, 2.3rem);
 	}
@@ -110,7 +128,7 @@ body {
 
 #logo {
 	position: absolute;
-	top:35px;
+	top:32px;
 	left:50%;
 	width:140px;
 	height:50px;
@@ -145,10 +163,6 @@ body {
 	}
 }
 
-.station-link {
-	cursor: pointer;
-}
-
 .station-info {
 	@extend %table-row;
 
@@ -175,7 +189,7 @@ body {
 
 .play-station-wrapper {
 	text-align: right;
-	padding-right: 10px;
+//	padding-right: 10px;
 }
 
 .play-station-btn {
@@ -381,6 +395,56 @@ hr {
 	}
 }
 
+#radio-volume-icon {
+	@include inline-block;
+	font-size: 2rem;
+	cursor: pointer;
+	margin-left:30px;
+}
+#radio-volume {
+	@include inline-block;
+	position:relative;
+	width:20%;
+	height:100%;
+	max-width:300px;
+	overflow:hidden;
+}
+
+.volume-handler {
+	display:block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: $volume-handler-size;
+	height: $volume-handler-size;
+	margin:-$volume-handler-size/2-2 0 0 0 -$volume-handler-size/2-2;
+	background-color: #FFF;
+	border: 1px solid $player-info;
+	@include border-radius(50%);
+	cursor: pointer;
+}
+
+.volume-slider {
+	display:block;
+	position: absolute;
+	top:50%;
+	width:99%;
+	height: 4px;
+	margin-top:-4px;
+	overflow:hidden;
+	background-color: $player-info;
+	border: 1px solid $player-info;
+	@include border-radius(4px);	
+}
+
+.volume-percent {
+	display:block;
+	width:50%;
+	height:100%;
+	background-color: #FFF;
+	cursor:pointer;
+}
+
 #thumnail-venue-wrapper {
 	@include inline-block;
 	padding-top: 6px;
@@ -405,22 +469,6 @@ hr {
 	}
 }
 
-#radio-volume-icon {
-	display:none;
-}
-
-#radio-volume {
-	display:none;
-}
-
-#radio-timer {
-	@include inline-block;
-	color: $player-timer;
-	font-size: 1.8rem;
-	margin:0;
-}
-
-
 /* Larger than mobile */
 @media (min-width: 400px) {
 
@@ -428,9 +476,17 @@ hr {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+	.container {
+		width:90%;
+		max-width:90%;
+	}
 	#main-header {
 		height: 325px;
 		h2 {
+			font-size: 6rem;
+		}
+		h3 {
+			margin-top:30px;
 			bottom:-270px;
 			@include trocchi-font(2.8rem, 2.8rem);
 		}
@@ -500,7 +556,7 @@ hr {
 	}
 	.play-station-wrapper {
 		text-align: right;
-		padding-right: 50px;
+	//	padding-right: 50px;
 	}
 	#radio-control {
 		margin:0 0 0 40px;
@@ -512,61 +568,6 @@ hr {
 		h4, h5 {
 			font-size: 1.5rem;
 		}
-	}
-	#radio-volume-icon {
-		@include inline-block;
-		font-size: 2rem;
-		cursor: pointer;
-		margin-left:30px;
-	}
-	#radio-volume {
-		@include inline-block;
-		position:relative;
-		width:0;
-		height:100%;
-		overflow:hidden;
-		margin-right:30px;
-
-		@include single-transition(width, 0.3s, ease-in-out);
-	}
-
-	.volume-extend {
-		width:300px !important;
-	}
-
-	.volume-handler {
-		display:block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: $volume-handler-size;
-		height: $volume-handler-size;
-		margin:-$volume-handler-size/2-2 0 0 0 -$volume-handler-size/2-2;
-		background-color: #FFF;
-		border: 1px solid $player-info;
-		@include border-radius(50%);
-		cursor: pointer;
-	}
-
-	.volume-slider {
-		display:block;
-		position: absolute;
-		top:50%;
-		width:99%;
-		height: 4px;
-		margin-top:-4px;
-		overflow:hidden;
-		background-color: $player-info;
-		border: 1px solid $player-info;
-		@include border-radius(4px);	
-	}
-
-	.volume-percent {
-		display:block;
-		width:50%;
-		height:100%;
-		background-color: #FFF;
-		cursor:pointer;
 	}
 }
 

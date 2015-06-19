@@ -135,22 +135,40 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 101, ../sass/styles.scss */
-#main-header h2 {
+/* line 102, ../sass/styles.scss */
+#main-header .container div {
+  display: table;
   position: absolute;
-  bottom: -230px;
-  margin: 0 auto;
+  width: 100%;
+  bottom: -260px;
   text-align: center;
+}
+/* line 111, ../sass/styles.scss */
+#main-header h2, #main-header h3 {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 115, ../sass/styles.scss */
+#main-header h2 {
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
+  font-family: 'PT Sans', sans-serif;
+}
+/* line 121, ../sass/styles.scss */
+#main-header h3 {
+  margin-top: 20px;
+  bottom: -230px;
   letter-spacing: 0.5rem;
   font-family: 'Trocchi', serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 #logo {
   position: absolute;
-  top: 35px;
+  top: 32px;
   left: 50%;
   width: 140px;
   height: 50px;
@@ -158,7 +176,7 @@ body {
   text-indent: -9999em;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .station {
   position: relative;
   width: 100%;
@@ -172,12 +190,12 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 132, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .station .container {
   display: table;
   height: 100%;
 }
-/* line 137, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .station:after {
   content: '';
   position: absolute;
@@ -192,41 +210,35 @@ body {
   background-image: linear-gradient(-105deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
-/* line 148, ../sass/styles.scss */
-.station-link {
-  cursor: pointer;
-}
-
-/* line 155, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .station-info div {
   position: relative;
   z-index: 5;
 }
-/* line 161, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .station-info h2, .station-info h3 {
   margin: 0;
 }
-/* line 165, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .station-info h2 {
   font-size: 3rem;
 }
-/* line 168, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .station-info h3 {
   font-size: 1.6rem;
 }
-/* line 171, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .station-info a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .play-station-wrapper {
   text-align: right;
-  padding-right: 10px;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .play-station-btn {
   font-size: 5.5rem;
   padding: 0px;
@@ -235,12 +247,12 @@ body {
   border-radius: 50%;
   background-color: #f18a26;
 }
-/* line 187, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 .play-station-btn:hover {
   color: #FFF;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .live-tag {
   width: 0;
   height: 0;
@@ -261,7 +273,7 @@ body {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 213, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 .live-tag:before {
   content: 'live';
   position: absolute;
@@ -269,17 +281,17 @@ body {
   left: -25px;
 }
 
-/* line 221, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 #station-1, #station1 .venue-header-img {
   background-image: url("../images/station-1/station-1-small.jpg");
 }
 
-/* line 225, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 #station-2, #station2 .venue-header-img {
   background-image: url("../images/station-2/station-2-small.jpg");
 }
 
-/* line 230, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .venue-page-wrapper {
   display: none;
   position: absolute;
@@ -296,7 +308,7 @@ body {
   transform: translateX(-100%);
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .venue-show {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -304,13 +316,13 @@ body {
   transform: translateX(0);
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 .venue-top-bar {
   width: 100%;
   height: 50px;
   background-color: #f18a26;
 }
-/* line 248, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .venue-top-bar a {
   display: block;
   position: absolute;
@@ -323,12 +335,12 @@ body {
   font-size: 3.4rem;
   line-height: 0;
 }
-/* line 261, ../sass/styles.scss */
+/* line 275, ../sass/styles.scss */
 .venue-top-bar a span {
   margin: -18px;
 }
 
-/* line 268, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 .venue-header-img {
   width: 100%;
   height: 236px;
@@ -340,7 +352,7 @@ body {
   background-size: cover;
 }
 
-/* line 276, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 .venue-wrapper {
   width: 100%;
   background-color: #FFFFFF;
@@ -349,50 +361,50 @@ body {
   padding-bottom: 55px;
 }
 
-/* line 284, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 .venue-name-address {
   padding: 20px 0;
   font-family: 'PT Sans', sans-serif;
 }
-/* line 287, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 .venue-name-address h1, .venue-name-address h3 {
   font-weight: 700 !important;
   margin: 0;
 }
-/* line 291, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .venue-name-address h1 {
   font-size: 3rem;
 }
-/* line 294, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 .venue-name-address h3 {
   font-size: 1.93rem;
 }
 
-/* line 300, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .venue-info img {
   width: 100%;
 }
-/* line 303, ../sass/styles.scss */
+/* line 317, ../sass/styles.scss */
 .venue-info p {
   font-family: 'Trocchi', serif;
   font-size: 1.5rem;
   line-height: 2.6rem;
 }
 
-/* line 308, ../sass/styles.scss */
+/* line 322, ../sass/styles.scss */
 hr {
   clear: both;
   border-top: 1px solid #c1c1c1;
 }
 
-/* line 315, ../sass/styles.scss */
+/* line 329, ../sass/styles.scss */
 .venue-recommends h3 {
   font-size: 2.7rem;
   font-weight: 700;
   text-align: center;
 }
 
-/* line 323, ../sass/styles.scss */
+/* line 337, ../sass/styles.scss */
 .record-thumbnail a {
   display: block;
   margin: 0 auto;
@@ -400,16 +412,16 @@ hr {
   text-decoration: none;
   color: #000;
 }
-/* line 328, ../sass/styles.scss */
+/* line 342, ../sass/styles.scss */
 .record-thumbnail a:hover {
   text-decoration: underline;
 }
-/* line 333, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 .record-thumbnail img {
   width: 100%;
   max-width: 190px;
 }
-/* line 337, ../sass/styles.scss */
+/* line 351, ../sass/styles.scss */
 .record-thumbnail h4 {
   font-family: 'Trocchi', serif;
   font-size: 1.6rem;
@@ -417,7 +429,7 @@ hr {
   text-align: center;
 }
 
-/* line 344, ../sass/styles.scss */
+/* line 358, ../sass/styles.scss */
 #radio {
   position: fixed;
   z-index: 100;
@@ -432,7 +444,7 @@ hr {
   transition: transform 0.3s ease-in-out;
 }
 
-/* line 357, ../sass/styles.scss */
+/* line 371, ../sass/styles.scss */
 .radio-hide {
   -moz-transform: translateY(55px);
   -ms-transform: translateY(55px);
@@ -440,7 +452,7 @@ hr {
   transform: translateY(55px);
 }
 
-/* line 361, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 #radio-control {
   display: inline-block;
   vertical-align: middle;
@@ -450,7 +462,7 @@ hr {
   color: #333333;
   margin: 0;
 }
-/* line 365, ../sass/styles.scss */
+/* line 379, ../sass/styles.scss */
 #radio-control li {
   display: inline-block;
   vertical-align: middle;
@@ -460,7 +472,7 @@ hr {
   margin: 0;
   list-style-type: none;
 }
-/* line 370, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 #radio-control a {
   display: block;
   margin: 3px 0px 0;
@@ -472,7 +484,7 @@ hr {
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;
 }
-/* line 377, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 #radio-control a:active {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -481,7 +493,75 @@ hr {
   color: #ABA;
 }
 
-/* line 384, ../sass/styles.scss */
+/* line 398, ../sass/styles.scss */
+#radio-volume-icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+/* line 404, ../sass/styles.scss */
+#radio-volume {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+/* line 413, ../sass/styles.scss */
+.volume-handler {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: -11px 0 0 -11px;
+  background-color: #FFF;
+  border: 1px solid #919191;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* line 427, ../sass/styles.scss */
+.volume-slider {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 99%;
+  height: 4px;
+  margin-top: -4px;
+  overflow: hidden;
+  background-color: #919191;
+  border: 1px solid #919191;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 440, ../sass/styles.scss */
+.volume-percent {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+/* line 448, ../sass/styles.scss */
 #thumnail-venue-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -490,18 +570,18 @@ hr {
   *display: inline;
   padding-top: 6px;
 }
-/* line 387, ../sass/styles.scss */
+/* line 451, ../sass/styles.scss */
 #thumnail-venue-wrapper div {
   width: 40px;
   height: 40px;
   overflow: hidden;
 }
-/* line 392, ../sass/styles.scss */
+/* line 456, ../sass/styles.scss */
 #thumnail-venue-wrapper img {
   width: 100%;
 }
 
-/* line 397, ../sass/styles.scss */
+/* line 461, ../sass/styles.scss */
 #radio-status {
   display: inline-block;
   vertical-align: middle;
@@ -509,86 +589,75 @@ hr {
   *zoom: 1;
   *display: inline;
 }
-/* line 399, ../sass/styles.scss */
+/* line 463, ../sass/styles.scss */
 #radio-status h4, #radio-status h5 {
   font-size: 1.2rem;
   margin: 0;
 }
-/* line 403, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 #radio-status h5 {
   color: #919191;
-}
-
-/* line 408, ../sass/styles.scss */
-#radio-volume-icon {
-  display: none;
-}
-
-/* line 412, ../sass/styles.scss */
-#radio-volume {
-  display: none;
-}
-
-/* line 416, ../sass/styles.scss */
-#radio-timer {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  color: #e5002c;
-  font-size: 1.8rem;
-  margin: 0;
 }
 
 /* Larger than mobile */
 /* Larger than phablet */
 @media (min-width: 550px) {
-  /* line 431, ../sass/styles.scss */
+  /* line 479, ../sass/styles.scss */
+  .container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  /* line 483, ../sass/styles.scss */
   #main-header {
     height: 325px;
   }
-  /* line 433, ../sass/styles.scss */
+  /* line 485, ../sass/styles.scss */
   #main-header h2 {
+    font-size: 6rem;
+  }
+  /* line 488, ../sass/styles.scss */
+  #main-header h3 {
+    margin-top: 30px;
     bottom: -270px;
     font-family: 'Trocchi', serif;
     font-size: 2.8rem;
     line-height: 2.8rem;
   }
 
-  /* line 438, ../sass/styles.scss */
+  /* line 494, ../sass/styles.scss */
   #logo {
     left: 0;
     margin-left: 0;
   }
 
-  /* line 442, ../sass/styles.scss */
+  /* line 498, ../sass/styles.scss */
   #station-1, #station1 .venue-header-img {
     background-image: url("../images/station-1/station-1-medium.jpg");
   }
 
-  /* line 446, ../sass/styles.scss */
+  /* line 502, ../sass/styles.scss */
   #station-2, #station2 .venue-header-img {
     background-image: url("../images/station-2/station-2-medium.jpg");
   }
 
-  /* line 450, ../sass/styles.scss */
+  /* line 506, ../sass/styles.scss */
   .venue-recommends h3 {
     text-align: left;
   }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 458, ../sass/styles.scss */
+  /* line 514, ../sass/styles.scss */
   .venue-header-img {
     height: 436px;
   }
 
-  /* line 461, ../sass/styles.scss */
+  /* line 517, ../sass/styles.scss */
   .venue-top-bar {
     height: 86px;
   }
-  /* line 463, ../sass/styles.scss */
+  /* line 519, ../sass/styles.scss */
   .venue-top-bar a {
     top: 20px;
     left: 20px;
@@ -596,157 +665,79 @@ hr {
     font-size: 4rem;
     line-height: 45px;
   }
-  /* line 469, ../sass/styles.scss */
+  /* line 525, ../sass/styles.scss */
   .venue-top-bar a span {
     margin: -20px;
   }
 
-  /* line 475, ../sass/styles.scss */
+  /* line 531, ../sass/styles.scss */
   .venue-name-address {
     padding: 50px 0;
   }
-  /* line 477, ../sass/styles.scss */
+  /* line 533, ../sass/styles.scss */
   .venue-name-address h1 {
     font-size: 5rem;
   }
-  /* line 480, ../sass/styles.scss */
+  /* line 536, ../sass/styles.scss */
   .venue-name-address h3 {
     font-size: 2.93rem;
   }
 
-  /* line 485, ../sass/styles.scss */
+  /* line 541, ../sass/styles.scss */
   .venue-info p {
     font-family: 'Trocchi', serif;
     font-size: 2rem;
     line-height: 3.4rem;
   }
 
-  /* line 490, ../sass/styles.scss */
+  /* line 546, ../sass/styles.scss */
   .station-info h2 {
     font-size: 5rem;
   }
-  /* line 493, ../sass/styles.scss */
+  /* line 549, ../sass/styles.scss */
   .station-info h3 {
     font-size: 2.4rem;
   }
 
-  /* line 497, ../sass/styles.scss */
+  /* line 553, ../sass/styles.scss */
   .play-station-btn {
     font-size: 9.5rem;
     padding: 5px;
   }
 
-  /* line 501, ../sass/styles.scss */
+  /* line 557, ../sass/styles.scss */
   .play-station-wrapper {
     text-align: right;
-    padding-right: 50px;
   }
 
-  /* line 505, ../sass/styles.scss */
+  /* line 561, ../sass/styles.scss */
   #radio-control {
     margin: 0 0 0 40px;
   }
-  /* line 507, ../sass/styles.scss */
+  /* line 563, ../sass/styles.scss */
   #radio-control a {
     margin: 3px 10px 0;
   }
 
-  /* line 512, ../sass/styles.scss */
+  /* line 568, ../sass/styles.scss */
   #radio-status h4, #radio-status h5 {
     font-size: 1.5rem;
-  }
-
-  /* line 516, ../sass/styles.scss */
-  #radio-volume-icon {
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-left: 30px;
-  }
-
-  /* line 522, ../sass/styles.scss */
-  #radio-volume {
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-    position: relative;
-    width: 0;
-    height: 100%;
-    overflow: hidden;
-    margin-right: 30px;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    -webkit-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
-  }
-
-  /* line 533, ../sass/styles.scss */
-  .volume-extend {
-    width: 300px !important;
-  }
-
-  /* line 537, ../sass/styles.scss */
-  .volume-handler {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    margin: -11px 0 0 -11px;
-    background-color: #FFF;
-    border: 1px solid #919191;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  /* line 551, ../sass/styles.scss */
-  .volume-slider {
-    display: block;
-    position: absolute;
-    top: 50%;
-    width: 99%;
-    height: 4px;
-    margin-top: -4px;
-    overflow: hidden;
-    background-color: #919191;
-    border: 1px solid #919191;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-  }
-
-  /* line 564, ../sass/styles.scss */
-  .volume-percent {
-    display: block;
-    width: 50%;
-    height: 100%;
-    background-color: #FFF;
-    cursor: pointer;
   }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 576, ../sass/styles.scss */
+  /* line 577, ../sass/styles.scss */
   #station-1, #station1 .venue-header-img {
     background-image: url("../images/station-1/station-1-large.jpg");
   }
 
-  /* line 580, ../sass/styles.scss */
+  /* line 581, ../sass/styles.scss */
   #station-2, #station2 .venue-header-img {
     background-image: url("../images/station-2/station-2-large.jpg");
   }
 }
 /* Larger than Desktop HD */
-/* line 589, ../sass/styles.scss */
+/* line 590, ../sass/styles.scss */
 .hide-radio {
   -moz-transform: translateY(-200px);
   -ms-transform: translateY(-200px);

@@ -137,9 +137,9 @@ body {
 }
 /* line 102, ../sass/styles.scss */
 #main-header .container div {
-  display: table;
   position: absolute;
   width: 100%;
+  left: 0;
   bottom: -260px;
   text-align: center;
 }
@@ -150,12 +150,13 @@ body {
 }
 /* line 115, ../sass/styles.scss */
 #main-header h2 {
+  line-height: 4rem;
   font-weight: 700 !important;
   letter-spacing: 0.1rem;
   font-size: 4rem;
   font-family: 'PT Sans', sans-serif;
 }
-/* line 121, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 #main-header h3 {
   margin-top: 20px;
   bottom: -230px;
@@ -165,7 +166,7 @@ body {
   line-height: 2.3rem;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 #logo {
   position: absolute;
   top: 32px;
@@ -176,7 +177,7 @@ body {
   text-indent: -9999em;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .station {
   position: relative;
   width: 100%;
@@ -190,12 +191,12 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 150, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .station .container {
   display: table;
   height: 100%;
 }
-/* line 155, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 .station:after {
   content: '';
   position: absolute;
@@ -210,35 +211,35 @@ body {
   background-image: linear-gradient(-105deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .station-info div {
   position: relative;
   z-index: 5;
 }
-/* line 175, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .station-info h2, .station-info h3 {
   margin: 0;
 }
-/* line 179, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .station-info h2 {
   font-size: 3rem;
 }
-/* line 182, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .station-info h3 {
   font-size: 1.6rem;
 }
-/* line 185, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .station-info a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 190, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .play-station-wrapper {
   text-align: right;
 }
 
-/* line 195, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .play-station-btn {
   font-size: 5.5rem;
   padding: 0px;
@@ -247,12 +248,12 @@ body {
   border-radius: 50%;
   background-color: #f18a26;
 }
-/* line 201, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .play-station-btn:hover {
   color: #FFF;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .live-tag {
   width: 0;
   height: 0;
@@ -273,7 +274,7 @@ body {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 227, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .live-tag:before {
   content: 'live';
   position: absolute;
@@ -281,17 +282,17 @@ body {
   left: -25px;
 }
 
-/* line 235, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 #station-1, #station1 .venue-header-img {
   background-image: url("../images/station-1/station-1-small.jpg");
 }
 
-/* line 239, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 #station-2, #station2 .venue-header-img {
   background-image: url("../images/station-2/station-2-small.jpg");
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .venue-page-wrapper {
   display: none;
   position: absolute;
@@ -308,7 +309,7 @@ body {
   transform: translateX(-100%);
 }
 
-/* line 254, ../sass/styles.scss */
+/* line 255, ../sass/styles.scss */
 .venue-show {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -316,18 +317,17 @@ body {
   transform: translateX(0);
 }
 
-/* line 258, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 .venue-top-bar {
   width: 100%;
   height: 50px;
   background-color: #f18a26;
 }
-/* line 262, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .venue-top-bar a {
   display: block;
   position: absolute;
   top: 7px;
-  left: 20px;
   width: 135px;
   height: 35px;
   text-decoration: none;
@@ -619,125 +619,123 @@ hr {
   /* line 488, ../sass/styles.scss */
   #main-header h3 {
     margin-top: 30px;
-    bottom: -270px;
     font-family: 'Trocchi', serif;
     font-size: 2.8rem;
     line-height: 2.8rem;
   }
 
-  /* line 494, ../sass/styles.scss */
+  /* line 493, ../sass/styles.scss */
   #logo {
     left: 0;
     margin-left: 0;
   }
 
-  /* line 498, ../sass/styles.scss */
+  /* line 497, ../sass/styles.scss */
   #station-1, #station1 .venue-header-img {
     background-image: url("../images/station-1/station-1-medium.jpg");
   }
 
-  /* line 502, ../sass/styles.scss */
+  /* line 501, ../sass/styles.scss */
   #station-2, #station2 .venue-header-img {
     background-image: url("../images/station-2/station-2-medium.jpg");
   }
 
-  /* line 506, ../sass/styles.scss */
+  /* line 505, ../sass/styles.scss */
   .venue-recommends h3 {
     text-align: left;
   }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 514, ../sass/styles.scss */
+  /* line 513, ../sass/styles.scss */
   .venue-header-img {
     height: 436px;
   }
 
-  /* line 517, ../sass/styles.scss */
+  /* line 516, ../sass/styles.scss */
   .venue-top-bar {
     height: 86px;
   }
-  /* line 519, ../sass/styles.scss */
+  /* line 518, ../sass/styles.scss */
   .venue-top-bar a {
     top: 20px;
-    left: 20px;
     height: 45px;
     font-size: 4rem;
     line-height: 45px;
   }
-  /* line 525, ../sass/styles.scss */
+  /* line 523, ../sass/styles.scss */
   .venue-top-bar a span {
     margin: -20px;
   }
 
-  /* line 531, ../sass/styles.scss */
+  /* line 529, ../sass/styles.scss */
   .venue-name-address {
     padding: 50px 0;
   }
-  /* line 533, ../sass/styles.scss */
+  /* line 531, ../sass/styles.scss */
   .venue-name-address h1 {
     font-size: 5rem;
   }
-  /* line 536, ../sass/styles.scss */
+  /* line 534, ../sass/styles.scss */
   .venue-name-address h3 {
     font-size: 2.93rem;
   }
 
-  /* line 541, ../sass/styles.scss */
+  /* line 539, ../sass/styles.scss */
   .venue-info p {
     font-family: 'Trocchi', serif;
     font-size: 2rem;
     line-height: 3.4rem;
   }
 
-  /* line 546, ../sass/styles.scss */
+  /* line 544, ../sass/styles.scss */
   .station-info h2 {
     font-size: 5rem;
   }
-  /* line 549, ../sass/styles.scss */
+  /* line 547, ../sass/styles.scss */
   .station-info h3 {
     font-size: 2.4rem;
   }
 
-  /* line 553, ../sass/styles.scss */
+  /* line 551, ../sass/styles.scss */
   .play-station-btn {
     font-size: 9.5rem;
     padding: 5px;
   }
 
-  /* line 557, ../sass/styles.scss */
+  /* line 555, ../sass/styles.scss */
   .play-station-wrapper {
     text-align: right;
   }
 
-  /* line 561, ../sass/styles.scss */
+  /* line 559, ../sass/styles.scss */
   #radio-control {
     margin: 0 0 0 40px;
   }
-  /* line 563, ../sass/styles.scss */
+  /* line 561, ../sass/styles.scss */
   #radio-control a {
     margin: 3px 10px 0;
   }
 
-  /* line 568, ../sass/styles.scss */
+  /* line 566, ../sass/styles.scss */
   #radio-status h4, #radio-status h5 {
     font-size: 1.5rem;
   }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 577, ../sass/styles.scss */
+  /* line 575, ../sass/styles.scss */
   #station-1, #station1 .venue-header-img {
     background-image: url("../images/station-1/station-1-large.jpg");
   }
 
-  /* line 581, ../sass/styles.scss */
+  /* line 579, ../sass/styles.scss */
   #station-2, #station2 .venue-header-img {
     background-image: url("../images/station-2/station-2-large.jpg");
   }
 }
 /* Larger than Desktop HD */
-/* line 590, ../sass/styles.scss */
+/* line 588, ../sass/styles.scss */
 .hide-radio {
   -moz-transform: translateY(-200px);
   -ms-transform: translateY(-200px);

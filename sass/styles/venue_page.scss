@@ -1,0 +1,113 @@
+// venue_page.scss
+.venue-page-wrapper {
+	display:none; //Firefox, IE fix
+	position: absolute;
+	top: 0%;
+	z-index: 10;
+	width: 100%;
+	@include single-transition(transform, 0.7s, cubic-bezier(.6,0,.4,1));
+	@include transform(translateX(-100%));
+}
+
+.venue-show {
+	@include transform(translateX(0));
+}
+
+.venue-top-bar {
+	width:100%;
+	height: 50px;
+	background-color: $pulse-top-bar;
+	a {
+		display:block;
+		position: absolute;
+		top:7px;
+		left:20px;
+		width: 135px;
+		height: 35px;
+		@include removeDefaultAnchor();
+		font-size:3.4rem;
+		line-height: 0;
+
+		@extend %pulse-logo;
+
+		span {
+			margin:-18px;
+		}
+
+	}
+}
+
+.venue-header-img {
+	width: 100%;
+	height: 236px;
+	background-repeat: no-repeat;
+	background-position: center 30%;
+	@include background-size(cover);
+}
+
+.venue-wrapper {
+	width:100%;
+	background-color: #FFFFFF;
+	position: relative;
+	z-index:99;
+	padding-bottom: $radio-height;
+}
+
+.venue-name-address {
+	padding: 20px 0;
+	font-family: 'PT Sans', sans-serif;
+	h1, h3 {
+		font-weight: 700 !important;
+		margin: 0;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 1.93rem;
+	}
+}
+
+.venue-info {
+	img {
+		width:100%;
+	}
+	p {
+		@include trocchi-font(1.5rem,2.6rem);
+	}
+}
+
+hr {
+	clear:both;
+	border-top: 1px solid $horizontal-bar;
+}
+
+//VENUE RECOMMENDATIONS
+.venue-recommends {
+	h3 {
+		font-size:2.7rem;
+		font-weight:700;
+		text-align:center;
+	}
+}
+
+.record-thumbnail {
+	a {
+		display:block;
+		margin: 0 auto;
+		text-align: center;
+		@include removeDefaultAnchor(#000);
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+	img {
+		width: 100%;
+		max-width: 190px;
+	}
+	h4 {
+		@include trocchi-font(1.6rem,2rem);
+		text-align: center;
+	}
+}

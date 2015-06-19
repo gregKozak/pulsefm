@@ -9,10 +9,11 @@ $(document).ready(function() {
 	//HIDE VENUE INFO
 	$(".venue-top-bar").click(function(e){
 		e.preventDefault();
-		$(".venue-page-wrapper").removeClass("venue-show").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+		$("#main-page-wrapper").removeClass("scale-down-wrapper");
+		$(this).parent().removeClass("venue-show").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 			$(this).hide().unbind(); // HIDE and unbind previously binded transition-end callback
 		});
-		$("#main-page-wrapper").removeClass("scale-down-wrapper");
+		
 	});
 
 	//START STREAMING BUTTON CONTROL
@@ -100,6 +101,7 @@ $(document).ready(function() {
 	//VENUE DETAILS ANIMATION
 	function showVenuePage(whichStation) {
 		$(whichStation).show(0,function(){
+
 			$(this).addClass("venue-show");  //Show venue info page
 		})
 		$("#main-page-wrapper").addClass("scale-down-wrapper"); //Animate main page scale down

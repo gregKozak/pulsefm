@@ -14,7 +14,14 @@ function requestVenueJSON() {
 
 function renderHomepageVenueBanners(venues) {
     $.each(venues, function(index, venue) {
-        var venueHoursForToday = venue.hoursOfOperation[(new Date()).getDay()]
+        var venueHoursForToday = venue.hoursOfOperation[(new Date()).getDay()];
+        for(var key in venueHoursForToday) {
+            if(venueHoursForToday.hasOwnProperty(key)) {
+                venueHoursForToday = venueHoursForToday[key];
+                break;
+            }
+        }
+
         var dataForHomepage = {
             name:            venue.name,
             location:        venue.location,

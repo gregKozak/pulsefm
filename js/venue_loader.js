@@ -5,6 +5,7 @@ function requestVenueJSON() {
     $.getJSON( "/venues.json", function(data) {
         window.venues = [];
         $.each(data.stations, function(key, station) {
+            station.id = key;
             window.venues.push(station);
         });
 
@@ -54,7 +55,7 @@ function renderHomepageVenueBanners(venues) {
             recommendation_4_url: venue.recommendations[3].url,
             recommendation_4_thumbnail: venue.recommendations[3].thumbnail
         }
-        $('#venue-pages').loadTemplate("templates/venue_page.html", dataForVenuePage);
+        $('#venue-pages').loadTemplate("templates/venue_page.html", dataForVenuePage, { prepend: true });
     });
 }
 

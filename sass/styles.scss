@@ -355,6 +355,12 @@ hr {
 	height: $radio-height;
 	background-color: $player-background;
 	border-top: 1px solid #cecece;
+  	-webkit-touch-callout: none;
+  	-webkit-user-select: none;
+  	-khtml-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
 
 	@include single-transition(transform, 0.3s, ease-in-out);
 
@@ -424,6 +430,8 @@ hr {
 }
 
 #radio-status {
+  	width: 140px;
+
 	@include inline-block;
 	h4, h5 {
 		font-size: 1.2rem;

@@ -1,17 +1,16 @@
 {
   "stations" : [
     {
-      "id" : 1,
       "name" : "A1 Records",
       "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
       "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
       "location" : "New York, NY",
       "genres" : "Funk, Soul, Disco",
       "images" : {
-        "venuePageLargeBanner" : "http://placehold.it/1300x400",
+        "venuePageLargeBanner" : "http://placehold.it/1020x400",
         "venuePageRightColumnBanner" : "http://placehold.it/370x500",
         "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
-        "venueThumbnail" : "http://placehold.it/40x49"
+        "venueThumbnail" : "http://placehold.it/40x45"
       },
       "recommendations" : [
         {
@@ -31,6 +30,85 @@
         },
         {
           "name" : "Lorem Ipsum (4)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(4)"
+        }
+      ],
+      "hoursOfOperation" : [
+        {
+          "Sunday" : [
+            900,
+            1700
+          ]
+        },
+        {
+          "Monday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Tuesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Wednesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Thursday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Friday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Saturday" : [
+            8,
+            1900
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Aquarius Records",
+      "stationUrl" : "http://oggvorbis.tb-stream.net:80/technobase.ogg",
+      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
+      "location" : "San Francisco, CA",
+      "genres" : "Classics",
+      "images" : {
+        "venuePageLargeBanner" : "http://placehold.it/1020x400",
+        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
+        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_2.jpg",
+        "venueThumbnail" : "http://placehold.it/40x49"
+      },
+      "recommendations" : [
+        {
+          "name" : "Aquarius Rec (1)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(1)"
+        },
+        {
+          "name" : "Aquarius Rec  (2)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(2)"
+        },
+        {
+          "name" : "Aquarius Rec  (3)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(3)"
+        },
+        {
+          "name" : "Aquarius Rec (4)",
           "url" : "http://google.com",
           "thumbnail": "http://placehold.it/190x190?text=190x190%20(4)"
         }

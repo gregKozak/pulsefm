@@ -2,6 +2,7 @@ $(document).ready(function() {
 	var audioIsPlaying = false // False for pause/stop, True for playing
 	var $audioEl = document.getElementById('radio-player');
 	var tempVolume = null;
+	var activeVenue = null;
 
 	// SHOW HOMEPAGE, HIDE VENUE PAGE
 	$('#venue-pages').on('click', '.venue-top-bar', function(e){
@@ -40,6 +41,8 @@ $(document).ready(function() {
 	// AUDIO CONTROLS
 	$("#radio-play").click(playPause);
 	$("#radio-volume-icon").click(handleMuteIconClick);
+	$('.icon-fast-rewind').click(handleRewindClick);
+	$('.icon-fast-forward').click(handleFastForwardClick);
 
 	function playPause() {
 		audioIsPlaying = !audioIsPlaying; //toggles between true/false state
@@ -52,6 +55,34 @@ $(document).ready(function() {
 			$("#radio-play").removeClass().addClass("icon-play-arrow");
 			$audioEl.pause();
 		}
+	}
+
+	function handleFastForwardClick() {
+		var nextStationId;
+		if (window.venues.length == 1) {
+			alert('Sorry, no other stations to play.');
+			return;
+		} else if (activeVenue.id == window.venues.length - 1) {
+			nextStationId = 0;
+		} else {
+			nextStationId = activeVenue.id + 1
+		}
+		$("#radio-play").removeClass().addClass("icon-pause");
+		playVenueRadioStation(nextStationId);
+	}
+
+	function handleRewindClick() {
+		var nextStationId;
+		if (window.venues.length == 1) {
+			alert('Sorry, no other stations to play.');
+			return;
+		} else if (activeVenue.id == 0) {
+			nextStationId = window.venues.length - 1;
+		} else {
+			nextStationId = activeVenue.id - 1
+		}
+		$("#radio-play").removeClass().addClass("icon-pause");
+		playVenueRadioStation(nextStationId)
 	}
 
 	function handleMuteIconClick(e) {
@@ -70,10 +101,10 @@ $(document).ready(function() {
 	}
 
 	function playVenueRadioStation(venueId) {
-		var venue = getVenueById(venueId);
-		$('#radio-station-name').text(venue.name);
-		$('#thumnail-venue-wrapper img').attr('src', venue.images.venueThumbnail);
-		$('#radio-player').attr('src', venue.stationUrl);
+		activeVenue = getVenueById(venueId);
+		$('#radio-station-name').text(activeVenue.name);
+		$('#thumnail-venue-wrapper img').attr('src', activeVenue.images.venueThumbnail);
+		$('#radio-player').attr('src', activeVenue.stationUrl);
 		$audioEl.pause();
 		$audioEl.play();
 	}

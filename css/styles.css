@@ -428,12 +428,18 @@ hr {
   height: 55px;
   background-color: #F2F2F2;
   border-top: 1px solid #cecece;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-/* line 361, ../sass/styles.scss */
+/* line 367, ../sass/styles.scss */
 #radio #volume-slider {
   display: block;
   position: absolute;
@@ -443,7 +449,7 @@ hr {
   margin-top: -3px;
 }
 
-/* line 372, ../sass/styles.scss */
+/* line 378, ../sass/styles.scss */
 .radio-hide {
   -moz-transform: translateY(55px);
   -ms-transform: translateY(55px);
@@ -451,7 +457,7 @@ hr {
   transform: translateY(55px);
 }
 
-/* line 376, ../sass/styles.scss */
+/* line 382, ../sass/styles.scss */
 #radio-control {
   display: inline-block;
   vertical-align: middle;
@@ -461,7 +467,7 @@ hr {
   color: #333333;
   margin: 0;
 }
-/* line 380, ../sass/styles.scss */
+/* line 386, ../sass/styles.scss */
 #radio-control li {
   display: inline-block;
   vertical-align: middle;
@@ -471,7 +477,7 @@ hr {
   margin: 0;
   list-style-type: none;
 }
-/* line 385, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 #radio-control a {
   display: block;
   margin: 3px 0px 0;
@@ -483,7 +489,7 @@ hr {
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;
 }
-/* line 392, ../sass/styles.scss */
+/* line 398, ../sass/styles.scss */
 #radio-control a:active {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -492,7 +498,7 @@ hr {
   color: #ABA;
 }
 
-/* line 399, ../sass/styles.scss */
+/* line 405, ../sass/styles.scss */
 #radio-volume-icon {
   display: inline-block;
   vertical-align: middle;
@@ -504,7 +510,7 @@ hr {
   margin-left: 30px;
 }
 
-/* line 405, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 #radio-volume {
   display: inline-block;
   vertical-align: middle;
@@ -517,7 +523,7 @@ hr {
   overflow: hidden;
 }
 
-/* line 413, ../sass/styles.scss */
+/* line 419, ../sass/styles.scss */
 #thumnail-venue-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -526,31 +532,32 @@ hr {
   *display: inline;
   padding-top: 6px;
 }
-/* line 416, ../sass/styles.scss */
+/* line 422, ../sass/styles.scss */
 #thumnail-venue-wrapper div {
   width: 40px;
   height: 40px;
   overflow: hidden;
 }
-/* line 421, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 #thumnail-venue-wrapper img {
   width: 100%;
 }
 
-/* line 426, ../sass/styles.scss */
+/* line 432, ../sass/styles.scss */
 #radio-status {
+  width: 140px;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
 }
-/* line 428, ../sass/styles.scss */
+/* line 436, ../sass/styles.scss */
 #radio-status h4, #radio-status h5 {
   font-size: 1.2rem;
   margin: 0;
 }
-/* line 432, ../sass/styles.scss */
+/* line 440, ../sass/styles.scss */
 #radio-status h5 {
   color: #919191;
 }
@@ -558,21 +565,21 @@ hr {
 /* Larger than mobile */
 /* Larger than phablet */
 @media (min-width: 550px) {
-  /* line 444, ../sass/styles.scss */
+  /* line 452, ../sass/styles.scss */
   .container {
     width: 90%;
     max-width: 90%;
   }
 
-  /* line 448, ../sass/styles.scss */
+  /* line 456, ../sass/styles.scss */
   #main-header {
     height: 325px;
   }
-  /* line 450, ../sass/styles.scss */
+  /* line 458, ../sass/styles.scss */
   #main-header h2 {
     font-size: 6rem;
   }
-  /* line 453, ../sass/styles.scss */
+  /* line 461, ../sass/styles.scss */
   #main-header h3 {
     margin-top: 30px;
     font-family: 'Trocchi', serif;
@@ -580,97 +587,97 @@ hr {
     line-height: 2.8rem;
   }
 
-  /* line 458, ../sass/styles.scss */
+  /* line 466, ../sass/styles.scss */
   #logo {
     left: 0;
     margin-left: 0;
   }
 
-  /* line 464, ../sass/styles.scss */
+  /* line 472, ../sass/styles.scss */
   .venue-recommends h3 {
     text-align: left;
   }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 472, ../sass/styles.scss */
+  /* line 480, ../sass/styles.scss */
   .venue-header-img {
     height: 436px;
   }
 
-  /* line 475, ../sass/styles.scss */
+  /* line 483, ../sass/styles.scss */
   .venue-top-bar {
     height: 86px;
   }
-  /* line 477, ../sass/styles.scss */
+  /* line 485, ../sass/styles.scss */
   .venue-top-bar a {
     top: 20px;
     height: 45px;
     font-size: 4rem;
     line-height: 45px;
   }
-  /* line 482, ../sass/styles.scss */
+  /* line 490, ../sass/styles.scss */
   .venue-top-bar a span {
     margin: -20px;
   }
 
-  /* line 488, ../sass/styles.scss */
+  /* line 496, ../sass/styles.scss */
   .venue-name-address {
     padding: 50px 0;
   }
-  /* line 490, ../sass/styles.scss */
+  /* line 498, ../sass/styles.scss */
   .venue-name-address h1 {
     font-size: 5rem;
   }
-  /* line 493, ../sass/styles.scss */
+  /* line 501, ../sass/styles.scss */
   .venue-name-address h3 {
     font-size: 2.93rem;
   }
 
-  /* line 498, ../sass/styles.scss */
+  /* line 506, ../sass/styles.scss */
   .venue-info p {
     font-family: 'Trocchi', serif;
     font-size: 2rem;
     line-height: 3.4rem;
   }
 
-  /* line 503, ../sass/styles.scss */
+  /* line 511, ../sass/styles.scss */
   .station-info h2 {
     font-size: 5rem;
   }
-  /* line 506, ../sass/styles.scss */
+  /* line 514, ../sass/styles.scss */
   .station-info h3 {
     font-size: 2.4rem;
   }
 
-  /* line 510, ../sass/styles.scss */
+  /* line 518, ../sass/styles.scss */
   .play-station-btn {
     font-size: 9.5rem;
     padding: 5px;
   }
 
-  /* line 514, ../sass/styles.scss */
+  /* line 522, ../sass/styles.scss */
   .play-station-wrapper {
     text-align: right;
   }
 
-  /* line 518, ../sass/styles.scss */
+  /* line 526, ../sass/styles.scss */
   #radio-control {
     margin: 0 0 0 40px;
   }
-  /* line 520, ../sass/styles.scss */
+  /* line 528, ../sass/styles.scss */
   #radio-control a {
     margin: 3px 10px 0;
   }
 
-  /* line 525, ../sass/styles.scss */
+  /* line 533, ../sass/styles.scss */
   #radio-status h4, #radio-status h5 {
     font-size: 1.5rem;
   }
 }
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* line 538, ../sass/styles.scss */
+/* line 546, ../sass/styles.scss */
 .hide-radio {
   -moz-transform: translateY(-200px);
   -ms-transform: translateY(-200px);
@@ -678,7 +685,7 @@ hr {
   transform: translateY(-200px);
 }
 
-/* line 542, ../sass/styles.scss */
+/* line 550, ../sass/styles.scss */
 .hidden {
   display: none;
 }

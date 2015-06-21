@@ -1,11 +1,9 @@
 $(document).ready(function() {
-
-	var volume = 100; //Default volume setting.
-	var tempVolume = volume; //Temporary volume, stores volume value for mute/unmute.
 	var audioIsPlaying = false // False for pause/stop, True for playing
 	var $audioEl = document.getElementById('radio-player');
+	var tempVolume = null;
 
-	//HIDE VENUE PAGE
+	// SHOW HOMEPAGE, HIDE VENUE PAGE
 	$('#venue-pages').on('click', '.venue-top-bar', function(e){
 		e.preventDefault();
 		$("#main-page-wrapper").removeClass("scale-down-wrapper");
@@ -15,7 +13,7 @@ $(document).ready(function() {
 		
 	});
 
-	//START STREAMING BUTTON CONTROL
+	// HOMEPAGE VENUE BANNER PLAY BUTTON CLICK
 	$("#stations").on('click', '.play-station-btn', function(e){
 		e.preventDefault();
 		var station = $(this).attr("href"); //Get station number
@@ -29,13 +27,19 @@ $(document).ready(function() {
 	$('#volume-slider').on('input', function(e){
 		newVolume = $(e.currentTarget).val();
 		$audioEl.volume = newVolume;
-		volume = newVolume;
-		muteIconUpdate();
+		$muteIconEl = $("#radio-volume-icon");
+		if(newVolume == 0) {
+			$muteIconEl.removeClass('icon-volume-high').addClass('icon-volume-mute');
+			audioIsPlaying = false;
+		} else if (!audioIsPlaying && newVolume > 0) {
+			audioIsPlaying = true
+			$muteIconEl.removeClass('icon-volume-mute').addClass('icon-volume-high');
+		}
 	});
 
-	// RADIO CONTROLS
+	// AUDIO CONTROLS
 	$("#radio-play").click(playPause);
-	$("#radio-volume-icon").click(audioMute);
+	$("#radio-volume-icon").click(handleMuteIconClick);
 
 	function playPause() {
 		audioIsPlaying = !audioIsPlaying; //toggles between true/false state
@@ -50,21 +54,18 @@ $(document).ready(function() {
 		}
 	}
 
-	function audioMute() {
-		if (volume == 0) volume = tempVolume; //restores previous volume setting
-		else {
-			tempVolume = volume; //store actual vol. setting
-			volume = 0; //mutes volume
-		}
-
-		muteIconUpdate();
-	}
-
-	function muteIconUpdate() {
-		if (volume == 0) {
-			$("#radio-volume-icon").removeClass().addClass("icon-volume-mute");
+	function handleMuteIconClick(e) {
+		$volumeSlider =  $('#volume-slider');
+		$muteIconEl = $(e.currentTarget);
+		if ($muteIconEl.hasClass('icon-volume-mute')) {
+			$muteIconEl.removeClass('icon-volume-mute').addClass('icon-volume-high');
+			$audioEl.play()
+			$volumeSlider.val(tempVolume);
 		} else {
-			$("#radio-volume-icon").removeClass().addClass("icon-volume-high");
+			$muteIconEl.removeClass('icon-volume-high').addClass('icon-volume-mute');
+			tempVolume = $volumeSlider.val();
+			$volumeSlider.val(0);
+			$audioEl.pause();
 		}
 	}
 

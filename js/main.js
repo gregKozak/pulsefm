@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var volume = 100; //Default volume setting.
 	var tempVolume = volume; //Temporary volume, stores volume value for mute/unmute.
-	var playState = false // False for pause/stop, True for playing
+	var audioIsPlaying = false // False for pause/stop, True for playing
 	var $audioEl = document.getElementById('radio-player');
 
 	volumeUpdate(); //updates volume on start
@@ -32,27 +32,17 @@ $(document).ready(function() {
 	$("#radio-volume-icon").click(audioMute);
 
 	function playPause() {
-		playState = !playState; //toggles between true/false state
+		audioIsPlaying = !audioIsPlaying; //toggles between true/false state
 
-		if (playState) {
+		if (!audioIsPlaying) {
 			$("#radio-play").removeClass().addClass("icon-pause");
-			$audioPlayer.play();
+			$audioEl.play();
 		}
 		else {
 			$("#radio-play").removeClass().addClass("icon-play-arrow");
-			$audioPlayer.pause();
+			$audioEl.pause();
 		}
 	}
-
-	/*	THIS IS FOR HOVERING ABOVE SPEAKER ICON
-
-		$("#radio-volume-icon").mouseover(function(){
-			$("#radio-volume").addClass("volume-extend");
-		});
-		$("#radio").mouseleave(function(){
-			$("#radio-volume").removeClass("volume-extend");
-		});
-	*/
 
 	function audioMute() {
 		if (volume == 0) volume = tempVolume; //restores previous volume setting

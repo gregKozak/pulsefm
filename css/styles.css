@@ -1,16 +1,16 @@
-/* line 12, ../sass/partials/_mixins.scss */
+/* line 19, ../sass/partials/_mixins.scss */
 .station-info {
   display: table-row;
   height: 100%;
 }
 
-/* line 17, ../sass/partials/_mixins.scss */
+/* line 24, ../sass/partials/_mixins.scss */
 .station-info div {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 22, ../sass/partials/_mixins.scss */
+/* line 29, ../sass/partials/_mixins.scss */
 #logo, .venue-top-bar a {
   background: url(../images/logo.svg) no-repeat;
   -moz-background-size: contain;
@@ -143,30 +143,33 @@ body {
   bottom: -260px;
   text-align: center;
 }
-/* line 111, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 #main-header h2, #main-header h3 {
   width: 100%;
   margin: 0 auto;
 }
-/* line 115, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 #main-header h2 {
   line-height: 4rem;
   font-weight: 700 !important;
   letter-spacing: 0.1rem;
-  font-size: 4rem;
-  font-family: 'PT Sans', sans-serif;
+  font-size: 6rem;
+  font-family: "Helvetica Neue", "HelveticaNeueBoldExtended", "HelveticaNeue-Bold-Extended", "Helvetica Neue Bold Extended", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  font-stretch: expanded;
 }
-/* line 122, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 #main-header h3 {
   margin-top: 20px;
   bottom: -230px;
-  letter-spacing: 0.5rem;
-  font-family: 'Trocchi', serif;
+  letter-spacing: 0.4rem;
+  font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 #logo {
   position: absolute;
   top: 32px;
@@ -177,7 +180,7 @@ body {
   text-indent: -9999em;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .station {
   position: relative;
   width: 100%;
@@ -191,12 +194,12 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 151, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .station .container {
   display: table;
   height: 100%;
 }
-/* line 156, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .station:after {
   content: '';
   position: absolute;
@@ -211,35 +214,35 @@ body {
   background-image: linear-gradient(-105deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
-/* line 170, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .station-info div {
   position: relative;
   z-index: 5;
 }
-/* line 176, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .station-info h2, .station-info h3 {
   margin: 0;
 }
-/* line 180, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 .station-info h2 {
   font-size: 3rem;
 }
-/* line 183, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 .station-info h3 {
   font-size: 1.6rem;
 }
-/* line 186, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .station-info a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .play-station-wrapper {
   text-align: right;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 .play-station-btn {
   font-size: 5.5rem;
   padding: 0px;
@@ -248,12 +251,12 @@ body {
   border-radius: 50%;
   background-color: #f18a26;
 }
-/* line 202, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .play-station-btn:hover {
   color: #FFF;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .live-tag {
   width: 0;
   height: 0;
@@ -274,7 +277,7 @@ body {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 228, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 .live-tag:before {
   content: 'live';
   position: absolute;
@@ -282,7 +285,7 @@ body {
   left: -25px;
 }
 
-/* line 237, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .venue-page-wrapper {
   display: none;
   position: absolute;
@@ -299,7 +302,7 @@ body {
   transform: translateX(-100%);
 }
 
-/* line 247, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .venue-show {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -307,13 +310,13 @@ body {
   transform: translateX(0);
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .venue-top-bar {
   width: 100%;
   height: 50px;
   background-color: #f18a26;
 }
-/* line 255, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 .venue-top-bar a {
   display: block;
   position: absolute;
@@ -325,12 +328,12 @@ body {
   font-size: 3.4rem;
   line-height: 0;
 }
-/* line 267, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .venue-top-bar a span {
   margin: -18px;
 }
 
-/* line 274, ../sass/styles.scss */
+/* line 277, ../sass/styles.scss */
 .venue-header-img {
   width: 100%;
   height: 236px;
@@ -342,7 +345,7 @@ body {
   background-size: cover;
 }
 
-/* line 282, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .venue-wrapper {
   width: 100%;
   background-color: #FFFFFF;
@@ -351,75 +354,79 @@ body {
   padding-bottom: 55px;
 }
 
-/* line 290, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .venue-name-address {
   padding: 20px 0;
-  font-family: 'PT Sans', sans-serif;
 }
-/* line 293, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .venue-name-address h1, .venue-name-address h3 {
   font-weight: 700 !important;
   margin: 0;
+  font-family: "Helvetica Neue", "HelveticaNeueBoldExtended", "HelveticaNeue-Bold-Extended", "Helvetica Neue Bold Extended", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  font-stretch: expanded;
 }
-/* line 297, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 .venue-name-address h1 {
   font-size: 3rem;
 }
-/* line 300, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .venue-name-address h3 {
   font-size: 1.93rem;
 }
 
-/* line 306, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 .venue-info img {
   width: 100%;
 }
-/* line 309, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .venue-info p {
-  font-family: 'Trocchi', serif;
+  font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 1.5rem;
   line-height: 2.6rem;
 }
 
-/* line 314, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 hr {
   clear: both;
   border-top: 1px solid #c1c1c1;
 }
 
-/* line 321, ../sass/styles.scss */
+/* line 326, ../sass/styles.scss */
 .venue-recommends h3 {
   font-size: 2.7rem;
   font-weight: 700;
   text-align: center;
 }
 
-/* line 329, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 .record-thumbnail a {
   display: block;
   margin: 0 auto;
+  letter-spacing: 0;
   text-align: center;
   text-decoration: none;
   color: #000;
 }
-/* line 334, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 .record-thumbnail a:hover {
   text-decoration: underline;
 }
-/* line 339, ../sass/styles.scss */
+/* line 345, ../sass/styles.scss */
 .record-thumbnail img {
   width: 100%;
   max-width: 190px;
 }
-/* line 343, ../sass/styles.scss */
+/* line 349, ../sass/styles.scss */
 .record-thumbnail h4 {
-  font-family: 'Trocchi', serif;
+  font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 1.6rem;
   line-height: 2rem;
   text-align: center;
 }
 
-/* line 350, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 #radio {
   position: fixed;
   z-index: 100;
@@ -439,7 +446,7 @@ hr {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-/* line 367, ../sass/styles.scss */
+/* line 373, ../sass/styles.scss */
 #radio #volume-slider {
   display: block;
   position: absolute;
@@ -449,7 +456,7 @@ hr {
   margin-top: -3px;
 }
 
-/* line 378, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 .radio-hide {
   -moz-transform: translateY(55px);
   -ms-transform: translateY(55px);
@@ -457,7 +464,7 @@ hr {
   transform: translateY(55px);
 }
 
-/* line 382, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 #radio-control {
   display: inline-block;
   vertical-align: middle;
@@ -467,7 +474,7 @@ hr {
   color: #333333;
   margin: 0;
 }
-/* line 386, ../sass/styles.scss */
+/* line 392, ../sass/styles.scss */
 #radio-control li {
   display: inline-block;
   vertical-align: middle;
@@ -477,7 +484,7 @@ hr {
   margin: 0;
   list-style-type: none;
 }
-/* line 391, ../sass/styles.scss */
+/* line 397, ../sass/styles.scss */
 #radio-control a {
   display: block;
   margin: 3px 0px 0;
@@ -489,7 +496,7 @@ hr {
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;
 }
-/* line 398, ../sass/styles.scss */
+/* line 404, ../sass/styles.scss */
 #radio-control a:active {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -498,7 +505,7 @@ hr {
   color: #ABA;
 }
 
-/* line 405, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 #radio-volume-icon {
   display: inline-block;
   vertical-align: middle;
@@ -510,7 +517,7 @@ hr {
   margin-left: 30px;
 }
 
-/* line 411, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 #radio-volume {
   display: inline-block;
   vertical-align: middle;
@@ -523,7 +530,7 @@ hr {
   overflow: hidden;
 }
 
-/* line 419, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 #thumnail-venue-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -532,18 +539,18 @@ hr {
   *display: inline;
   padding-top: 6px;
 }
-/* line 422, ../sass/styles.scss */
+/* line 428, ../sass/styles.scss */
 #thumnail-venue-wrapper div {
   width: 40px;
   height: 40px;
   overflow: hidden;
 }
-/* line 427, ../sass/styles.scss */
+/* line 433, ../sass/styles.scss */
 #thumnail-venue-wrapper img {
   width: 100%;
 }
 
-/* line 432, ../sass/styles.scss */
+/* line 438, ../sass/styles.scss */
 #radio-status {
   width: 140px;
   display: inline-block;
@@ -552,12 +559,12 @@ hr {
   *zoom: 1;
   *display: inline;
 }
-/* line 436, ../sass/styles.scss */
+/* line 442, ../sass/styles.scss */
 #radio-status h4, #radio-status h5 {
   font-size: 1.2rem;
   margin: 0;
 }
-/* line 440, ../sass/styles.scss */
+/* line 446, ../sass/styles.scss */
 #radio-status h5 {
   color: #919191;
 }
@@ -565,119 +572,122 @@ hr {
 /* Larger than mobile */
 /* Larger than phablet */
 @media (min-width: 550px) {
-  /* line 452, ../sass/styles.scss */
+  /* line 458, ../sass/styles.scss */
   .container {
     width: 90%;
     max-width: 90%;
   }
 
-  /* line 456, ../sass/styles.scss */
+  /* line 462, ../sass/styles.scss */
   #main-header {
     height: 325px;
   }
-  /* line 458, ../sass/styles.scss */
+  /* line 464, ../sass/styles.scss */
   #main-header h2 {
     font-size: 6rem;
+    line-height: 6rem;
   }
-  /* line 461, ../sass/styles.scss */
+  /* line 468, ../sass/styles.scss */
   #main-header h3 {
     margin-top: 30px;
-    font-family: 'Trocchi', serif;
+    letter-spacing: 0.4rem;
+    word-spacing: 4px;
+    font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
     font-size: 2.8rem;
     line-height: 2.8rem;
   }
 
-  /* line 466, ../sass/styles.scss */
+  /* line 475, ../sass/styles.scss */
   #logo {
     left: 0;
     margin-left: 0;
   }
 
-  /* line 472, ../sass/styles.scss */
+  /* line 481, ../sass/styles.scss */
   .venue-recommends h3 {
     text-align: left;
   }
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 480, ../sass/styles.scss */
+  /* line 489, ../sass/styles.scss */
   .venue-header-img {
     height: 436px;
   }
 
-  /* line 483, ../sass/styles.scss */
+  /* line 492, ../sass/styles.scss */
   .venue-top-bar {
     height: 86px;
   }
-  /* line 485, ../sass/styles.scss */
+  /* line 494, ../sass/styles.scss */
   .venue-top-bar a {
     top: 20px;
     height: 45px;
     font-size: 4rem;
     line-height: 45px;
   }
-  /* line 490, ../sass/styles.scss */
+  /* line 499, ../sass/styles.scss */
   .venue-top-bar a span {
     margin: -20px;
   }
 
-  /* line 496, ../sass/styles.scss */
+  /* line 505, ../sass/styles.scss */
   .venue-name-address {
     padding: 50px 0;
   }
-  /* line 498, ../sass/styles.scss */
+  /* line 507, ../sass/styles.scss */
   .venue-name-address h1 {
     font-size: 5rem;
   }
-  /* line 501, ../sass/styles.scss */
+  /* line 510, ../sass/styles.scss */
   .venue-name-address h3 {
     font-size: 2.93rem;
   }
 
-  /* line 506, ../sass/styles.scss */
+  /* line 515, ../sass/styles.scss */
   .venue-info p {
-    font-family: 'Trocchi', serif;
+    font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
     font-size: 2rem;
     line-height: 3.4rem;
   }
 
-  /* line 511, ../sass/styles.scss */
+  /* line 520, ../sass/styles.scss */
   .station-info h2 {
     font-size: 5rem;
   }
-  /* line 514, ../sass/styles.scss */
+  /* line 523, ../sass/styles.scss */
   .station-info h3 {
     font-size: 2.4rem;
   }
 
-  /* line 518, ../sass/styles.scss */
+  /* line 527, ../sass/styles.scss */
   .play-station-btn {
     font-size: 9.5rem;
     padding: 5px;
   }
 
-  /* line 522, ../sass/styles.scss */
+  /* line 531, ../sass/styles.scss */
   .play-station-wrapper {
     text-align: right;
   }
 
-  /* line 526, ../sass/styles.scss */
+  /* line 535, ../sass/styles.scss */
   #radio-control {
     margin: 0 0 0 40px;
   }
-  /* line 528, ../sass/styles.scss */
+  /* line 537, ../sass/styles.scss */
   #radio-control a {
     margin: 3px 10px 0;
   }
 
-  /* line 533, ../sass/styles.scss */
+  /* line 542, ../sass/styles.scss */
   #radio-status h4, #radio-status h5 {
     font-size: 1.5rem;
   }
 }
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* line 546, ../sass/styles.scss */
+/* line 555, ../sass/styles.scss */
 .hide-radio {
   -moz-transform: translateY(-200px);
   -ms-transform: translateY(-200px);
@@ -685,7 +695,7 @@ hr {
   transform: translateY(-200px);
 }
 
-/* line 550, ../sass/styles.scss */
+/* line 559, ../sass/styles.scss */
 .hidden {
   display: none;
 }

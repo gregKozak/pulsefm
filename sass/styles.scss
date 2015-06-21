@@ -108,22 +108,26 @@ body {
 		}
 
 	}
+
 	h2, h3 {
 		width:100%;
 		margin:0 auto;
 	}
+
 	h2 {
 		line-height:4rem;
 		font-weight: 700 !important;
 		letter-spacing: 0.1rem;
-		font-size:4rem;
-		font-family: 'PT Sans', sans-serif;
+		font-size:6rem;
+		@include helvetica-neue-font(6rem);
 	}
+
 	h3 {
 		margin-top:20px;
 		bottom: -230px;
-		letter-spacing: 0.5rem;
-		@include trocchi-font(1.8rem, 2.3rem);
+		letter-spacing: 0.4rem;
+
+		@include big-caslon-font(1.8rem, 2.3rem);
 	}
 }
 
@@ -190,7 +194,6 @@ body {
 
 .play-station-wrapper {
 	text-align: right;
-//	padding-right: 10px;
 }
 
 .play-station-btn {
@@ -289,10 +292,12 @@ body {
 
 .venue-name-address {
 	padding: 20px 0;
-	font-family: 'PT Sans', sans-serif;
+
 	h1, h3 {
 		font-weight: 700 !important;
 		margin: 0;
+
+	  	@include helvetica-neue-font(6rem);
 	}
 	h1 {
 		font-size: 3rem;
@@ -307,7 +312,7 @@ body {
 		width:100%;
 	}
 	p {
-		@include trocchi-font(1.5rem,2.6rem);
+		@include big-caslon-font(1.5rem,2.6rem);
 	}
 }
 
@@ -329,6 +334,7 @@ hr {
 	a {
 		display:block;
 		margin: 0 auto;
+	  	letter-spacing: 0;
 		text-align: center;
 		@include removeDefaultAnchor(#000);
 		&:hover {
@@ -341,7 +347,7 @@ hr {
 		max-width: 190px;
 	}
 	h4 {
-		@include trocchi-font(1.6rem,2rem);
+		@include big-caslon-font(1.6rem,2rem);
 		text-align: center;
 	}
 }
@@ -457,10 +463,13 @@ hr {
 		height: 325px;
 		h2 {
 			font-size: 6rem;
+		  	line-height: 6rem;
 		}
 		h3 {
 			margin-top:30px;
-			@include trocchi-font(2.8rem, 2.8rem);
+		  	letter-spacing: 0.4rem;
+		  	word-spacing: 4px;
+			@include big-caslon-font(2.8rem, 2.8rem);
 		}
 	}
 	#logo {
@@ -504,7 +513,7 @@ hr {
 	}
 	.venue-info {
 		p {
-			@include trocchi-font(2rem,3.4rem);
+			@include big-caslon-font(2rem,3.4rem);
 		}
 	}
 	.station-info {

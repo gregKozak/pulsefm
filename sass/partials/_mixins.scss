@@ -1,7 +1,14 @@
-@mixin trocchi-font($font-size, $line-height) {
-	font-family: 'Trocchi', serif;
+@mixin big-caslon-font($font-size, $line-height) {
+	font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	font-size: $font-size;
 	line-height: $line-height;
+}
+
+@mixin helvetica-neue-font($font-size) {
+  	font-family: "Helvetica Neue", "HelveticaNeueBoldExtended", "HelveticaNeue-Bold-Extended", "Helvetica Neue Bold Extended", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  	font-weight: 600;
+  	font-size: $font-size;
+  	font-stretch: expanded;
 }
 
 @mixin removeDefaultAnchor($color:#FFF) {

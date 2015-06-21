@@ -16,22 +16,22 @@
         {
           "name" : "Lorem Ipsum (1)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(1)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
         },
         {
           "name" : "Lorem Ipsum (2)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(2)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
         },
         {
           "name" : "Lorem Ipsum (3)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(3)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
         },
         {
           "name" : "Lorem Ipsum (4)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(4)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
         }
       ],
       "hoursOfOperation" : [
@@ -95,22 +95,180 @@
         {
           "name" : "Aquarius Rec (1)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(1)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
         },
         {
           "name" : "Aquarius Rec  (2)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(2)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
         },
         {
           "name" : "Aquarius Rec  (3)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(3)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
         },
         {
           "name" : "Aquarius Rec (4)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190?text=190x190%20(4)"
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
+        }
+      ],
+      "hoursOfOperation" : [
+        {
+          "Sunday" : [
+            900,
+            1700
+          ]
+        },
+        {
+          "Monday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Tuesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Wednesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Thursday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Friday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Saturday" : [
+            8,
+            1900
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Ameoba Records",
+      "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
+      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
+      "location" : "West Hollywood, CA",
+      "genres" : "House, Trance",
+      "images" : {
+        "venuePageLargeBanner" : "http://placehold.it/1020x400",
+        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
+        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
+        "venueThumbnail" : "http://placehold.it/40x45"
+      },
+      "recommendations" : [
+        {
+          "name" : "Lorem Ipsum (1)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
+        },
+        {
+          "name" : "Lorem Ipsum (2)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
+        },
+        {
+          "name" : "Lorem Ipsum (3)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
+        },
+        {
+          "name" : "Lorem Ipsum (4)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
+        }
+      ],
+      "hoursOfOperation" : [
+        {
+          "Sunday" : [
+            900,
+            1700
+          ]
+        },
+        {
+          "Monday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Tuesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Wednesday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Thursday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Friday" : [
+            800,
+            1900
+          ]
+        },
+        {
+          "Saturday" : [
+            8,
+            1900
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Tower Records",
+      "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
+      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
+      "location" : "Sacramento, CA",
+      "genres" : "Nintendocore, Folktronica",
+      "images" : {
+        "venuePageLargeBanner" : "http://placehold.it/1020x400",
+        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
+        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
+        "venueThumbnail" : "http://placehold.it/40x45"
+      },
+      "recommendations" : [
+        {
+          "name" : "Lorem Ipsum (1)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
+        },
+        {
+          "name" : "Lorem Ipsum (2)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
+        },
+        {
+          "name" : "Lorem Ipsum (3)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
+        },
+        {
+          "name" : "Lorem Ipsum (4)",
+          "url" : "http://google.com",
+          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
         }
       ],
       "hoursOfOperation" : [

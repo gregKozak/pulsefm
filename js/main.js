@@ -84,6 +84,7 @@ $(document).ready(function() {
 		var venue = getVenueById(venueId);
 		$('#radio-station-name').text(venue.name);
 		$('#thumnail-venue-wrapper img').attr('src', venue.images.venueThumbnail);
+		$('#radio-player').attr('src', venue.stationUrl);
 		$audioEl.pause();
 		$audioEl.play();
 	}
@@ -91,7 +92,6 @@ $(document).ready(function() {
 	//VENUE DETAILS ANIMATION
 	function showVenuePage(whichStation) {
 		$(whichStation).show(0,function(){
-
 			$(this).addClass("venue-show");  //Show venue info page
 		})
 		$("#main-page-wrapper").addClass("scale-down-wrapper"); //Animate main page scale down

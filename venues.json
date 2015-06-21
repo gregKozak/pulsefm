@@ -86,10 +86,10 @@
       "location" : "San Francisco, CA",
       "genres" : "Classics",
       "images" : {
-        "venuePageLargeBanner" : "http://placehold.it/1020x400",
-        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
+        "venuePageLargeBanner" : "images/placeholders/venue_page_large_banner_1.jpg",
+        "venuePageRightColumnBanner" : "images/placeholders/venue_page_lower_banner_1.jpg",
         "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_2.jpg",
-        "venueThumbnail" : "http://placehold.it/40x49"
+        "venueThumbnail" : "images/placeholders/radio_thumbnail.jpg"
       },
       "recommendations" : [
         {

@@ -233,14 +233,6 @@ body {
 	}
 }
 
-#station-1, #station1 .venue-header-img {
-	background-image: url("../images/station-1/station-1-small.jpg");
-}
-
-#station-2, #station2 .venue-header-img {
-	background-image: url("../images/station-2/station-2-small.jpg");
-}
-
 //Venue page
 .venue-page-wrapper {
 	display:none; //Firefox, IE fix
@@ -365,6 +357,15 @@ hr {
 	border-top: 1px solid #cecece;
 
 	@include single-transition(transform, 0.3s, ease-in-out);
+
+  	#volume-slider {
+	  display:block;
+	  position: absolute;
+	  top:50%;
+	  width:99%;
+	  height: 4px;
+	  margin-top: -3px;
+	}
 }
 
 //For showing radio animation
@@ -406,43 +407,7 @@ hr {
 	position:relative;
 	width:20%;
 	height:100%;
-	max-width:300px;
 	overflow:hidden;
-}
-
-.volume-handler {
-	display:block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: $volume-handler-size;
-	height: $volume-handler-size;
-	margin:-$volume-handler-size/2-2 0 0 0 -$volume-handler-size/2-2;
-	background-color: #FFF;
-	border: 1px solid $player-info;
-	@include border-radius(50%);
-	cursor: pointer;
-}
-
-.volume-slider {
-	display:block;
-	position: absolute;
-	top:50%;
-	width:99%;
-	height: 4px;
-	margin-top:-4px;
-	overflow:hidden;
-	background-color: $player-info;
-	border: 1px solid $player-info;
-	@include border-radius(4px);	
-}
-
-.volume-percent {
-	display:block;
-	width:50%;
-	height:100%;
-	background-color: #FFF;
-	cursor:pointer;
 }
 
 #thumnail-venue-wrapper {
@@ -494,13 +459,7 @@ hr {
 		left:0;
 		margin-left:0;
 	}
-	#station-1, #station1 .venue-header-img {
-		background-image: url("../images/station-1/station-1-medium.jpg");
-	}
 
-	#station-2, #station2 .venue-header-img {
-		background-image: url("../images/station-2/station-2-medium.jpg");
-	}
 	.venue-recommends {
 		h3 {
 			text-align:left;
@@ -570,16 +529,7 @@ hr {
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
-
-	#station-1, #station1 .venue-header-img {
-		background-image: url("../images/station-1/station-1-large.jpg");
-	}
-
-	#station-2, #station2 .venue-header-img {
-		background-image: url("../images/station-2/station-2-large.jpg");
-	}
-}
+@media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}

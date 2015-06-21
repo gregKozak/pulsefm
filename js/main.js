@@ -5,8 +5,6 @@ $(document).ready(function() {
 	var audioIsPlaying = false // False for pause/stop, True for playing
 	var $audioEl = document.getElementById('radio-player');
 
-	volumeUpdate(); //updates volume on start
-
 	//HIDE VENUE PAGE
 	$('#venue-pages').on('click', '.venue-top-bar', function(e){
 		e.preventDefault();
@@ -27,7 +25,15 @@ $(document).ready(function() {
 		playVenueRadioStation(station.substring(1));
 	});
 
-	//RADIO CONTROLS
+	// LISTEN FOR VOLUME SLIDER
+	$('#volume-slider').on('input', function(e){
+		newVolume = $(e.currentTarget).val();
+		$audioEl.volume = newVolume;
+		volume = newVolume;
+		muteIconUpdate();
+	});
+
+	// RADIO CONTROLS
 	$("#radio-play").click(playPause);
 	$("#radio-volume-icon").click(audioMute);
 
@@ -50,32 +56,14 @@ $(document).ready(function() {
 			tempVolume = volume; //store actual vol. setting
 			volume = 0; //mutes volume
 		}
-		volumeUpdate();
+
+		muteIconUpdate();
 	}
 
-	function volumeUpdate() {
-		$(".volume-percent").css({"width":volume+"%"});
-		$(".volume-handler").css({"left":(volume * 0.85 + 4)+"%"});
-		volumeIconUpdate();
-	}
-
-	function volumeIconUpdate() {
-		//Couldn't find any good switch/case solution, so I'm using ifs :-/
-
+	function muteIconUpdate() {
 		if (volume == 0) {
-			if ($("#radio-volume-icon").hasClass("icon-volume-mute")) return; //to avoid necessary adding/removing classes
 			$("#radio-volume-icon").removeClass().addClass("icon-volume-mute");
-		}
-		if (volume > 0 && volume < 33) {
-			if ($("#radio-volume-icon").hasClass("icon-volume-low")) return;
-			$("#radio-volume-icon").removeClass().addClass("icon-volume-low");
-		}
-		if (volume > 33 && volume < 66) {
-			if ($("#radio-volume-icon").hasClass("icon-volume-medium")) return;
-			$("#radio-volume-icon").removeClass().addClass("icon-volume-medium");
-		}
-		if (volume > 66) {
-			if ($("#radio-volume-icon").hasClass("icon-volume-high")) return;
+		} else {
 			$("#radio-volume-icon").removeClass().addClass("icon-volume-high");
 		}
 	}

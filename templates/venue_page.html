@@ -16,37 +16,20 @@
                     <p data-content="description"></p>
                 </div>
                 <div class="four columns">
-                    <img src="images/shop1-art-img.jpg" alt="">
+                    <img data-template-bind='[{"attribute": "src", "value": "lower_banner_bg_img_attr_val"}]' alt="">
                 </div>
                 <hr>
             </div>
         </article>
         <section class="container venue-recommends">
-            <h3>Lorem records recommends...</h3>
+            <h3 data-content="recommendations_title"></h3>
             <div class="row">
                 <div class="record-thumbnail three columns">
-                    <a href="">
-                        <img src="images/placeholders/recommend-placeholder.jpg" alt="">
+                    <a data-template-bind='[{"attribute": "href", "value": "recommendation_1_url"}]' target="_blank">
+                        <img data-template-bind='[{"attribute": "src", "value": "recommendation_1_thumbnail"}]' alt="">
                     </a>
-                    <h4><a href="">Lorem ipsum</a></h4>
-                </div>
-                <div class="record-thumbnail three columns">
-                    <a href="">
-                        <img src="images/placeholders/recommend-placeholder.jpg" alt="">
-                    </a>
-                    <h4><a href="">Adipisicing elit</a></h4>
-                </div>
-                <div class="record-thumbnail three columns">
-                    <a href="">
-                        <img src="images/placeholders/recommend-placeholder.jpg" alt="">
-                    </a>
-                    <h4><a href="">Expedita ipsa libero animi. Culpa</a></h4>
-                </div>
-                <div class="record-thumbnail three columns">
-                    <a href="">
-                        <img src="images/placeholders/recommend-placeholder.jpg" alt="">
-                    </a>
-                    <h4><a href="">Dolore nobis officia, nam</a></h4>
+                    <h4><a data-template-bind='[{"attribute": "href", "value": "recommendation_1_url"}]'
+                           data-content="recommendation_1_name" target="_blank"></a></h4>
                 </div>
             </div>
         </section>

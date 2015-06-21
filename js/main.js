@@ -6,9 +6,7 @@ $(document).ready(function() {
 
 	volumeUpdate(); //updates volume on start
 
-	//HIDE VENUE INFO
-
-	// Listen for the click on a static parent element
+	//HIDE VENUE PAGE
 	$('#venue-pages').on('click', '.venue-top-bar', function(e){
 		e.preventDefault();
 		$("#main-page-wrapper").removeClass("scale-down-wrapper");
@@ -29,8 +27,6 @@ $(document).ready(function() {
 	});
 
 	//RADIO CONTROLS
-
-	//toogle play/pause
 	$("#radio-play").click(playPause);
 	$("#radio-volume-icon").click(audioMute);
 
@@ -40,27 +36,23 @@ $(document).ready(function() {
 		if (playState) {
 			$("#radio-play").removeClass().addClass("icon-pause");
 			//RESUME  MUSIC STREAM
-
-
 		}
 		else {
 			$("#radio-play").removeClass().addClass("icon-play-arrow");
 			//STOP  MUSIC STREAM
-
-
 		}
 	}
 
+	/*	THIS IS FOR HOVERING ABOVE SPEAKER ICON
 
-/*	THIS IS FOR HOVERING ABOVE SPEAKER ICON
-	
-	$("#radio-volume-icon").mouseover(function(){
-		$("#radio-volume").addClass("volume-extend");
-	});
-	$("#radio").mouseleave(function(){
-		$("#radio-volume").removeClass("volume-extend");
-	});
-*/
+		$("#radio-volume-icon").mouseover(function(){
+			$("#radio-volume").addClass("volume-extend");
+		});
+		$("#radio").mouseleave(function(){
+			$("#radio-volume").removeClass("volume-extend");
+		});
+	*/
+
 	function audioMute() {
 		if (volume == 0) volume = tempVolume; //restores previous volume setting
 		else {

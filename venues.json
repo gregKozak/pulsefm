@@ -1,7 +1,7 @@
 {
   "stations" : [
     {
-      "id" : "someUniqueId",
+      "id" : 1,
       "name" : "A1 Records",
       "stationUrl" : "http://link.to/the/stati.on/a1",
       "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
@@ -9,51 +9,58 @@
       "genres" : "Funk, Soul, Disco",
       "images" : {
         "venuePageLargeBanner" : "http://placehold.it/1300x400",
-        "venuePageRightColumnBanner" : "http://placehold.it/397x486",
+        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
         "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
         "venueThumbnail" : "http://placehold.it/40x49"
       },
+      "recommendations" : [
+        {
+          "name" : "Lorem Ipsum",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190"
+        }
+      ],
       "hoursOfOperation" : [
         {
           "Sunday" : [
-            9,
-            17
+            900,
+            1700
           ]
         },
         {
           "Monday" : [
-            9,
-            17
+            800,
+            1900
           ]
         },
         {
           "Tuesday" : [
-            9,
-            17
+            800,
+            1900
           ]
         },
         {
           "Wednesday" : [
-            9,
-            17
+            800,
+            1900
           ]
         },
         {
           "Thursday" : [
-            9,
-            17
+            800,
+            1900
           ]
         },
         {
           "Friday" : [
-            9,
-            17
+            800,
+            1900
           ]
         },
         {
           "Saturday" : [
-            9,
-            17
+            8,
+            1900
           ]
         }
       ]

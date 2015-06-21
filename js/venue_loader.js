@@ -31,12 +31,21 @@ function renderHomepageVenueBanners(venues) {
             location:    venue.location,
             genres:      venue.genres,
             description: venue.description,
+            main_banner_bg_img_attr_val: "background-image:url('" + venue.images.venuePageLargeBanner + "')",
+            lower_banner_bg_img_attr_val:  venue.images.venuePageRightColumnBanner,
             recommendations_title: venue.name + " recommends...",
             recommendation_1_name: venue.recommendations[0].name,
             recommendation_1_url: venue.recommendations[0].url,
             recommendation_1_thumbnail: venue.recommendations[0].thumbnail,
-            main_banner_bg_img_attr_val: "background-image:url('" + venue.images.venuePageLargeBanner + "')",
-            lower_banner_bg_img_attr_val:  venue.images.venuePageRightColumnBanner
+            recommendation_2_name: venue.recommendations[1].name,
+            recommendation_2_url: venue.recommendations[1].url,
+            recommendation_2_thumbnail: venue.recommendations[1].thumbnail,
+            recommendation_3_name: venue.recommendations[2].name,
+            recommendation_3_url: venue.recommendations[2].url,
+            recommendation_3_thumbnail: venue.recommendations[2].thumbnail,
+            recommendation_4_name: venue.recommendations[3].name,
+            recommendation_4_url: venue.recommendations[3].url,
+            recommendation_4_thumbnail: venue.recommendations[3].thumbnail
         }
         $('#venue-pages').loadTemplate("templates/venue_page.html", dataForVenuePage);
     });

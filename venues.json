@@ -15,9 +15,24 @@
       },
       "recommendations" : [
         {
-          "name" : "Lorem Ipsum",
+          "name" : "Lorem Ipsum (1)",
           "url" : "http://google.com",
-          "thumbnail": "http://placehold.it/190x190"
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(1)"
+        },
+        {
+          "name" : "Lorem Ipsum (2)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(2)"
+        },
+        {
+          "name" : "Lorem Ipsum (3)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(3)"
+        },
+        {
+          "name" : "Lorem Ipsum (4)",
+          "url" : "http://google.com",
+          "thumbnail": "http://placehold.it/190x190?text=190x190%20(4)"
         }
       ],
       "hoursOfOperation" : [

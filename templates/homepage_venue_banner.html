@@ -1,6 +1,4 @@
-<div class="station" data-template-bind='[
-        {"attribute": "style", "value": "bg_img_attr_val"},
-        {"attribute": "data-venue-id", "value": "venue_id"}]'>
+<div class="station" data-template-bind='[{"attribute": "style", "value": "bg_img_attr_val"}]'>
     <div class="container">
         <div class="station-info">
             <div class="station-name-address">
@@ -12,7 +10,8 @@
                 </h3>
             </div>
             <div class="play-station-wrapper">
-                <a href="#station2" class="play-station-btn icon-play-arrow"></a>
+                <a  data-template-bind='[{"attribute": "href", "value": "venue_el_id"}]'
+                    class="play-station-btn icon-play-arrow"></a>
             </div>
         </div>
     </div>

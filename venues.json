@@ -1,7 +1,7 @@
 {
   "stations" : [
     {
-      "id" : 1,
+      "id" : "station2",
       "name" : "A1 Records",
       "stationUrl" : "http://link.to/the/stati.on/a1",
       "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
@@ -10,7 +10,7 @@
       "images" : {
         "venuePageLargeBanner" : "http://placehold.it/1020x806",
         "venuePageRightColumnBanner" : "http://placehold.it/397x486",
-        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1-gradient.jpg",
+        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
         "venueThumbnail" : "http://placehold.it/40x49"
       },
       "hoursOfOperation" : [

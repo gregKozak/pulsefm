@@ -7,7 +7,9 @@ $(document).ready(function() {
 	volumeUpdate(); //updates volume on start
 
 	//HIDE VENUE INFO
-	$(".venue-top-bar").click(function(e){
+
+	// Listen for the click on a static parent element
+	$('#venue-pages').on('click', '.venue-top-bar', function(e){
 		e.preventDefault();
 		$("#main-page-wrapper").removeClass("scale-down-wrapper");
 		$(this).parent().removeClass("venue-show").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){

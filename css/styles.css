@@ -196,7 +196,7 @@ body {
   display: table;
   height: 100%;
 }
-/* line 156, ../sass/styles.scss
+/* line 156, ../sass/styles.scss */
 .station:after {
   content: '';
   position: absolute;
@@ -209,7 +209,7 @@ body {
   background-image: -moz-linear-gradient(195deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   background-image: -webkit-linear-gradient(195deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   background-image: linear-gradient(-105deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-}*/
+}
 
 /* line 170, ../sass/styles.scss */
 .station-info div {
@@ -628,6 +628,16 @@ hr {
   #logo {
     left: 0;
     margin-left: 0;
+  }
+
+  /* line 497, ../sass/styles.scss */
+  #station-1, #station1 .venue-header-img {
+    background-image: url("../images/station-1/station-1-medium.jpg");
+  }
+
+  /* line 501, ../sass/styles.scss */
+  #station-2, #station2 .venue-header-img {
+    background-image: url("../images/station-2/station-2-medium.jpg");
   }
 
   /* line 505, ../sass/styles.scss */

@@ -17,7 +17,7 @@ $(document).ready(function() {
 	});
 
 	//START STREAMING BUTTON CONTROL
-	$(".play-station-btn").click(function(e){
+	$("#stations").on('click', '.play-station-btn', function(e){
 		e.preventDefault();
 		var station = $(this).attr("href"); //Get station number
 		showVenuePage(station); //shows venue page
@@ -107,5 +107,5 @@ $(document).ready(function() {
 		$("#main-page-wrapper").addClass("scale-down-wrapper"); //Animate main page scale down
 	}
 
-
+	requestVenueJSON()
 });

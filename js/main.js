@@ -25,10 +25,7 @@ $(document).ready(function() {
 		showVenuePage(station); //shows venue page
 		$("#radio").removeClass("radio-hide"); //Show radio
 
-
 		//HERE GOES STREAMING_MAGIC();  :-)
-
-
 	});
 
 	//RADIO CONTROLS

@@ -588,3 +588,6 @@ hr {
 .hide-radio {
 	@include transform(translateY(-200px));
 }
+.hidden {
+  display: none;
+}

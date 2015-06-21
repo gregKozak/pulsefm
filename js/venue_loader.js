@@ -3,9 +3,9 @@
 //
 function requestVenueJSON() {
     $.getJSON( "/venues.json", function(data) {
-        venues = [];
+        window.venues = [];
         $.each(data.stations, function(key, station) {
-            venues.push(station);
+            window.venues.push(station);
         });
 
         renderHomepageVenueBanners(venues);
@@ -65,4 +65,15 @@ function venueIsOpen(hoursOfOperation) {
     var isOpen = isAfterOpenTime && isBeforeCloseTime;
 
     return isOpen;
+}
+
+function getVenueById(id) {
+    venue = null;
+    $.each(window.venues, function(index, v) {
+        if(v.id == parseInt(id)) {
+            venue = v;
+        }
+    })
+
+    return venue;
 }

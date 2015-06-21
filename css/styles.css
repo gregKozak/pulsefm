@@ -742,3 +742,8 @@ hr {
   -webkit-transform: translateY(-200px);
   transform: translateY(-200px);
 }
+
+/* line 591, ../sass/styles.scss */
+.hidden {
+  display: none;
+}

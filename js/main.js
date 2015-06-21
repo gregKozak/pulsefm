@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var volume = 100; //Default volume setting.
 	var tempVolume = volume; //Temporary volume, stores volume value for mute/unmute.
 	var playState = false // False for pause/stop, True for playing
+	var $audioEl = document.getElementById('radio-player');
 
 	volumeUpdate(); //updates volume on start
 
@@ -23,7 +24,7 @@ $(document).ready(function() {
 		showVenuePage(station); //shows venue page
 		$("#radio").removeClass("radio-hide"); //Show radio
 
-		alert('play button CLICK');
+		playVenueRadioStation(station.substring(1));
 	});
 
 	//RADIO CONTROLS
@@ -35,11 +36,11 @@ $(document).ready(function() {
 
 		if (playState) {
 			$("#radio-play").removeClass().addClass("icon-pause");
-			//RESUME  MUSIC STREAM
+			$audioPlayer.play();
 		}
 		else {
 			$("#radio-play").removeClass().addClass("icon-play-arrow");
-			//STOP  MUSIC STREAM
+			$audioPlayer.pause();
 		}
 	}
 
@@ -87,6 +88,14 @@ $(document).ready(function() {
 			if ($("#radio-volume-icon").hasClass("icon-volume-high")) return;
 			$("#radio-volume-icon").removeClass().addClass("icon-volume-high");
 		}
+	}
+
+	function playVenueRadioStation(venueId) {
+		var venue = getVenueById(venueId);
+		$('#radio-station-name').text(venue.name);
+		$('#thumnail-venue-wrapper img').attr('src', venue.images.venueThumbnail);
+		$audioEl.pause();
+		$audioEl.play();
 	}
 
 	//VENUE DETAILS ANIMATION

@@ -1,0 +1,153 @@
+@import "compass";
+@import "compass/css3";
+@import "base/variables";
+@import "base/mixins";
+
+#radio {
+	position:fixed;
+	z-index:100;
+	bottom:0;
+	width:100%;
+	height: $radio-height;
+	background-color: $player-background;
+	border-top: 1px solid #cecece;
+
+	@include single-transition(transform, 0.3s, ease-in-out);
+
+	&.radio-hide {
+		@include transform(translateY($radio-height));
+	}
+
+	#radio-control {
+		.icon-fast-forward:before {
+			content: "\e600";
+		}
+		.icon-fast-rewind:before {
+			content: "\e601";
+		}
+		.icon-pause:before {
+			content: "\e602";
+		}
+
+		@include inline-block;
+		color: $player-main;
+		margin:0;
+		li {
+			@include inline-block;
+			margin:0;
+			list-style-type:none;
+		}
+		a {
+			display:block;
+			margin:3px 0px 0;
+			@include removeDefaultAnchor($player-main);
+			font-size: 3.5rem;
+			@include single-transition(transform, 0.1s, ease-in-out);
+			
+			&:active {
+				@include transform(scale(1.2));
+				color: #ABA
+			}
+		}
+	}
+	#radio-volume-icon {
+		.icon-volume-high:before {
+			content: "\ea26";
+		}
+		.icon-volume-medium:before {
+			content: "\ea27";
+		}
+		.icon-volume-low:before {
+			content: "\ea28";
+		}
+		.icon-volume-mute:before {
+			content: "\ea29";
+		}
+		@include inline-block;
+		font-size: 2rem;
+		cursor: pointer;
+		margin-left:30px;
+	}
+	#radio-volume {
+		@include inline-block;
+		position:relative;
+		width:20%;
+		height:100%;
+		max-width:300px;
+		overflow:hidden;
+	}
+
+	.volume-handler {
+		display:block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: $volume-handler-size;
+		height: $volume-handler-size;
+		margin:-$volume-handler-size/2-2 0 0 0 -$volume-handler-size/2-2;
+		background-color: #FFF;
+		border: 1px solid $player-info;
+		@include border-radius(50%);
+		cursor: pointer;
+	}
+
+	.volume-slider {
+		display:block;
+		position: absolute;
+		top:50%;
+		width:99%;
+		height: 4px;
+		margin-top:-4px;
+		overflow:hidden;
+		background-color: $player-info;
+		border: 1px solid $player-info;
+		@include border-radius(4px);	
+	}
+
+	.volume-percent {
+		display:block;
+		width:50%;
+		height:100%;
+		background-color: #FFF;
+		cursor:pointer;
+	}
+	#thumnail-venue-wrapper {
+		@include inline-block;
+		padding-top: 6px;
+		div {
+			width: 40px;
+			height: 40px;
+			overflow:hidden;
+		}
+		img {
+			width:100%;
+		}
+	}
+
+	#radio-status {
+		@include inline-block;
+		h4, h5 {
+			font-size: 1.2rem;
+			margin: 0;
+		}
+		h5 {
+			color: $player-info;
+		}
+	}
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#radio-control {
+		margin:0 0 0 40px;
+		a {
+			margin:3px 10px 0;
+		}
+	}
+	#radio-status {
+		h4, h5 {
+			font-size: 1.5rem;
+		}
+	}
+}

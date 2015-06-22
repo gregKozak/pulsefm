@@ -1,0 +1,28 @@
+#station-1, #station1 .venue-header-img {
+	background-image: url("../images/station-1/station-1-small.jpg");
+}
+
+#station-2, #station2 .venue-header-img {
+	background-image: url("../images/station-2/station-2-small.jpg");
+}
+
+@media (min-width: 550px) {
+	#station-1, #station1 .venue-header-img {
+		background-image: url("../images/station-1/station-1-medium.jpg");
+	}
+
+	#station-2, #station2 .venue-header-img {
+		background-image: url("../images/station-2/station-2-medium.jpg");
+	}
+}
+
+@media (min-width: 1000px) {
+
+	#station-1, #station1 .venue-header-img {
+		background-image: url("../images/station-1/station-1-large.jpg");
+	}
+
+	#station-2, #station2 .venue-header-img {
+		background-image: url("../images/station-2/station-2-large.jpg");
+	}
+}

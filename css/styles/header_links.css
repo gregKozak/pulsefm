@@ -1,0 +1,32 @@
+/* line 1, ../../sass/styles/header_links.scss */
+#station-1, #station1 .venue-header-img {
+  background-image: url("../images/station-1/station-1-small.jpg");
+}
+
+/* line 5, ../../sass/styles/header_links.scss */
+#station-2, #station2 .venue-header-img {
+  background-image: url("../images/station-2/station-2-small.jpg");
+}
+
+@media (min-width: 550px) {
+  /* line 10, ../../sass/styles/header_links.scss */
+  #station-1, #station1 .venue-header-img {
+    background-image: url("../images/station-1/station-1-medium.jpg");
+  }
+
+  /* line 14, ../../sass/styles/header_links.scss */
+  #station-2, #station2 .venue-header-img {
+    background-image: url("../images/station-2/station-2-medium.jpg");
+  }
+}
+@media (min-width: 1000px) {
+  /* line 21, ../../sass/styles/header_links.scss */
+  #station-1, #station1 .venue-header-img {
+    background-image: url("../images/station-1/station-1-large.jpg");
+  }
+
+  /* line 25, ../../sass/styles/header_links.scss */
+  #station-2, #station2 .venue-header-img {
+    background-image: url("../images/station-2/station-2-large.jpg");
+  }
+}

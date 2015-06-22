@@ -1,0 +1,182 @@
+/* line 22, ../../sass/base/_mixins.scss */
+.venue-page-wrapper .venue-top-bar a {
+  background: url(../images/logo.svg) no-repeat;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/* line 7, ../../sass/styles/venue.scss */
+.venue-page-wrapper {
+  display: none;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  width: 100%;
+  -moz-transition: -moz-transform 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  -o-transition: -o-transform 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: transform 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 16, ../../sass/styles/venue.scss */
+.venue-page-wrapper.venue-show {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 20, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-top-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #f18a26;
+}
+/* line 24, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-top-bar a {
+  display: block;
+  position: absolute;
+  top: 7px;
+  width: 135px;
+  height: 35px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 3.4rem;
+  line-height: 0;
+}
+/* line 36, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-top-bar a span {
+  margin: -18px;
+}
+/* line 42, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-header-img {
+  width: 100%;
+  height: 236px;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 50, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 99;
+  padding-bottom: 55px;
+}
+/* line 58, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info img {
+  width: 100%;
+}
+/* line 61, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info p {
+  font-family: 'Trocchi', serif;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+/* line 64, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info .venue-name-address {
+  padding: 20px 0;
+  font-family: 'PT Sans', sans-serif;
+}
+/* line 67, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h1, .venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h3 {
+  font-weight: 700 !important;
+  margin: 0;
+}
+/* line 71, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h1 {
+  font-size: 3rem;
+}
+/* line 74, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h3 {
+  font-size: 1.93rem;
+}
+/* line 78, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-info hr {
+  clear: both;
+  border-top: 1px solid #c1c1c1;
+}
+/* line 84, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-recommends h3 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 90, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-recommends .record-thumbnail a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+/* line 95, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-recommends .record-thumbnail a:hover {
+  text-decoration: underline;
+}
+/* line 100, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-recommends .record-thumbnail img {
+  width: 100%;
+  max-width: 190px;
+}
+/* line 104, ../../sass/styles/venue.scss */
+.venue-page-wrapper .venue-wrapper .venue-recommends .record-thumbnail h4 {
+  font-family: 'Trocchi', serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  /* line 118, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-wrapper .venue-recommends h3 {
+    text-align: left;
+  }
+}
+@media (min-width: 750px) {
+  /* line 129, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-top-bar {
+    height: 86px;
+  }
+  /* line 131, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-top-bar a {
+    top: 20px;
+    height: 45px;
+    font-size: 4rem;
+    line-height: 45px;
+  }
+  /* line 136, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-top-bar a span {
+    margin: -20px;
+  }
+  /* line 141, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-header-img {
+    height: 436px;
+  }
+  /* line 146, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-wrapper .venue-info p {
+    font-family: 'Trocchi', serif;
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+  /* line 149, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-wrapper .venue-info .venue-name-address {
+    padding: 50px 0;
+  }
+  /* line 151, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h1 {
+    font-size: 5rem;
+  }
+  /* line 154, ../../sass/styles/venue.scss */
+  .venue-page-wrapper .venue-wrapper .venue-info .venue-name-address h3 {
+    font-size: 2.93rem;
+  }
+}

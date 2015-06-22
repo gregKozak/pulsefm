@@ -1,0 +1,25 @@
+@mixin trocchi-font($font-size, $line-height) {
+	font-family: 'Trocchi', serif;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+@mixin removeDefaultAnchor($color:#FFF) {
+	text-decoration:none;
+	color:$color;
+}
+
+%table-row {
+	display: table-row;
+	height: 100%;
+} 
+
+%table-middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+%pulse-logo {
+	background:url(../images/logo.svg) no-repeat;
+	@include background-size(contain);
+}

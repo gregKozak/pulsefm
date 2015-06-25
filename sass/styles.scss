@@ -118,8 +118,7 @@ body {
 		line-height:4rem;
 		font-weight: 700 !important;
 		letter-spacing: 0.1rem;
-		font-size:6rem;
-		@include helvetica-neue-font(6rem);
+		@include helvetica-neue-font(5rem);
 	}
 
 	h3 {
@@ -467,7 +466,7 @@ hr {
 		}
 		h3 {
 			margin-top:30px;
-		  	letter-spacing: 0.4rem;
+		  	letter-spacing: 0.3rem;
 		  	word-spacing: 4px;
 			@include big-caslon-font(2.8rem, 2.8rem);
 		}

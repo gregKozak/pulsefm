@@ -1,13 +1,27 @@
-# pulsefm
-Few changes regarding better interface handling:
+## Pulse.FM
+Because we're accessing a JSON file for content, we need an HTTP server. SASS is also used for CSS organization.
 
-1. PLAY button (main page) and station name are different links:
-First one plays radio instantly, and second one transports to Venue details.
-This enables user to play different stations without going into necessary details.
-HOWEVER, in this case, a "play this station" button should be placed on Venue detail page (can be putted next to station name as well) in order to avoid going back to main page for music playing.
+#### Getting Started on OSX
+Install Compass for compiling CSS
+```console
+gem install compass
+```
+#### Changing the CSS
+Before making changes to the CSS, run the following command inside the root directory of the project:
+```console
+compass watch
+```
+Pressing `ctrl+c` will kill the process.
 
-2. Added "<" symbol next to Pulse.fm logo on Venue page – makes "back" function more understandable.
+#### Running the app
+ From inside the root folder of the project, run the following command:
+ ```console
+ python -m SimpleHTTPServer
+ ```
 
-Lastly, one problem:
+In your browser, navigate to:
+```
+http://0.0.0.0:8000
+```
 
-Since fonts used in layout are not licence-free, I cannot use them to convert info font-face. I think we should consider using some fonts from vast library of google fonts. I can find some good replacements.
+Voila! Pulse.FM should be visible & working.

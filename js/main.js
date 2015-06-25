@@ -70,6 +70,8 @@ $(document).ready(function() {
 		}
 		$("#radio-play").removeClass().addClass("icon-pause");
 		playVenueRadioStation(nextStationId);
+		$('.venue-page-wrapper').removeClass('venue-show').css('display', 'none')
+		$('#' + nextStationId).addClass('venue-show').css('display', 'inline')
 	}
 
 	function handleRewindClick() {
@@ -84,6 +86,10 @@ $(document).ready(function() {
 		}
 		$("#radio-play").removeClass().addClass("icon-pause");
 		playVenueRadioStation(nextStationId)
+
+		playVenueRadioStation(nextStationId);
+		$('.venue-page-wrapper').removeClass('venue-show').css('display', 'none')
+		$('#' + nextStationId).addClass('venue-show').css('display', 'inline')
 	}
 
 	function handleMuteIconClick(e) {

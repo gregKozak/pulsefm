@@ -1,7 +1,7 @@
 ## Pulse.FM
 Requires a server running for accessing venues.json locally over HTTP (due to cross-origin security policies within browsers).
 
-SASS is also used for CSS organization and must be compiled into CSS. 
+SASS is also used for CSS organization and must be compiled into CSS.
 
 #### Getting Started on OSX
 Install Compass for compiling CSS

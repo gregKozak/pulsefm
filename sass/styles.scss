@@ -124,7 +124,7 @@ body {
 	h3 {
 		margin-top:20px;
 		bottom: -230px;
-		letter-spacing: 0.4rem;
+		letter-spacing: 0.3rem;
 
 		@include big-caslon-font(1.8rem, 2.3rem);
 	}
@@ -466,7 +466,7 @@ hr {
 		}
 		h3 {
 			margin-top:30px;
-		  	letter-spacing: 0.3rem;
+		  	letter-spacing: 0.4rem;
 		  	word-spacing: 4px;
 			@include big-caslon-font(2.8rem, 2.8rem);
 		}

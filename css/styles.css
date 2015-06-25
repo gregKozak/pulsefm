@@ -162,7 +162,7 @@ body {
 #main-header h3 {
   margin-top: 20px;
   bottom: -230px;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -589,7 +589,7 @@ hr {
   /* line 467, ../sass/styles.scss */
   #main-header h3 {
     margin-top: 30px;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.4rem;
     word-spacing: 4px;
     font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
     font-size: 2.8rem;

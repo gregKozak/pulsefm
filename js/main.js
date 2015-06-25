@@ -20,7 +20,10 @@ $(document).ready(function() {
 		var station = $(this).attr("href"); //Get station number
 		showVenuePage(station); //shows venue page
 		$("#radio").removeClass("radio-hide"); //Show radio
-		$("body").css('margin-bottom', '50px');
+		$("body").css('margin-bottom', '50px');$radioPlayEl = $('#radio-play')
+		if($radioPlayEl.hasClass('icon-play-arrow')){
+			$radioPlayEl.removeClass('icon-play-arrow').addClass('icon-pause')
+		}
 
 		playVenueRadioStation(station.substring(1));
 	});

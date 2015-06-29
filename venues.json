@@ -1,320 +1,156 @@
 {
-  "stations" : [
-    {
-      "name" : "A1 Records",
-      "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
-      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
-      "location" : "New York, NY",
-      "genres" : "Funk, Soul, Disco",
-      "images" : {
-        "venuePageLargeBanner" : "http://placehold.it/1020x400",
-        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
-        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
-        "venueThumbnail" : "http://placehold.it/40x45"
-      },
-      "recommendations" : [
-        {
-          "name" : "Lorem Ipsum (1)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
-        },
-        {
-          "name" : "Lorem Ipsum (2)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
-        },
-        {
-          "name" : "Lorem Ipsum (3)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
-        },
-        {
-          "name" : "Lorem Ipsum (4)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
-        }
-      ],
-      "hoursOfOperation" : [
-        {
-          "Sunday" : [
-            900,
-            1700
-          ]
-        },
-        {
-          "Monday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Tuesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Wednesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Thursday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Friday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Saturday" : [
-            8,
-            1900
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "Aquarius Records",
-      "stationUrl" : "http://oggvorbis.tb-stream.net:80/technobase.ogg",
-      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
-      "location" : "San Francisco, CA",
-      "genres" : "Classics",
-      "images" : {
-        "venuePageLargeBanner" : "images/placeholders/venue_page_large_banner_1.jpg",
-        "venuePageRightColumnBanner" : "images/placeholders/venue_page_lower_banner_1.jpg",
-        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_2.jpg",
-        "venueThumbnail" : "images/placeholders/radio_thumbnail.jpg"
-      },
-      "recommendations" : [
-        {
-          "name" : "Aquarius Rec (1)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
-        },
-        {
-          "name" : "Aquarius Rec  (2)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
-        },
-        {
-          "name" : "Aquarius Rec  (3)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
-        },
-        {
-          "name" : "Aquarius Rec (4)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
-        }
-      ],
-      "hoursOfOperation" : [
-        {
-          "Sunday" : [
-            900,
-            1700
-          ]
-        },
-        {
-          "Monday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Tuesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Wednesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Thursday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Friday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Saturday" : [
-            8,
-            1900
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "Ameoba Records",
-      "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
-      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
-      "location" : "West Hollywood, CA",
-      "genres" : "House, Trance",
-      "images" : {
-        "venuePageLargeBanner" : "http://placehold.it/1020x400",
-        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
-        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
-        "venueThumbnail" : "http://placehold.it/40x45"
-      },
-      "recommendations" : [
-        {
-          "name" : "Lorem Ipsum (1)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
-        },
-        {
-          "name" : "Lorem Ipsum (2)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
-        },
-        {
-          "name" : "Lorem Ipsum (3)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
-        },
-        {
-          "name" : "Lorem Ipsum (4)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
-        }
-      ],
-      "hoursOfOperation" : [
-        {
-          "Sunday" : [
-            900,
-            1700
-          ]
-        },
-        {
-          "Monday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Tuesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Wednesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Thursday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Friday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Saturday" : [
-            8,
-            1900
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "Tower Records",
-      "stationUrl" : "http://radio.cratedigger.fm:8000/listen",
-      "description" : "Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and di tsorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city. Within the confines of Aquarius Records is a plethora of music both old and new; Strange and wonderful; Eclectic and disorienting. It’s nearly overwhelming when browsing. One of the few remaining haunts of the San Francisco that once existed, Aquarius Records is one of the oldest independent record stores in the city.",
-      "location" : "Sacramento, CA",
-      "genres" : "Nintendocore",
-      "images" : {
-        "venuePageLargeBanner" : "http://placehold.it/1020x400",
-        "venuePageRightColumnBanner" : "http://placehold.it/370x500",
-        "homepageVenueBanner" : "images/placeholders/homepage_venue_banner_1.jpg",
-        "venueThumbnail" : "http://placehold.it/40x45"
-      },
-      "recommendations" : [
-        {
-          "name" : "Lorem Ipsum (1)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(1)"
-        },
-        {
-          "name" : "Lorem Ipsum (2)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(2)"
-        },
-        {
-          "name" : "Lorem Ipsum (3)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(3)"
-        },
-        {
-          "name" : "Lorem Ipsum (4)",
-          "url" : "http://google.com",
-          "thumbnail" : "http://placehold.it/190x190?text=190x190%20(4)"
-        }
-      ],
-      "hoursOfOperation" : [
-        {
-          "Sunday" : [
-            900,
-            1700
-          ]
-        },
-        {
-          "Monday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Tuesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Wednesday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Thursday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Friday" : [
-            800,
-            1900
-          ]
-        },
-        {
-          "Saturday" : [
-            8,
-            1900
-          ]
-        }
-      ]
-    }
-  ]
+	"stations": [{
+		"name": "A1 Records",
+		"stationUrl": "http://radio.cratedigger.fm:8000/listen",
+		"description": "There's not a DJ that passes through NYC without a proper visit to the crates of A1. Frequented by local legends like Danny Krivit, Pete Rock, and Louie Vega, the store has held its own in the ever-changing neighborhood of East Village just shy of 20 years. Here, the Hip-Hop, Jazz, Soul, Funk, Techno, House bins of 12\", and LPs keep the diggers coming back for more. For those into sample-based music, there's a high chance you've heard a song that sampled something uncovered here. And while you may find some newer releases in Hip-Hop or Electronic, most records are, as the likes of Urban Outfitters say, \"vintage.\" Walk in on any given afternoon and you may hear some hard-hitting Detroit techno or a full length underground Hip-Hop album over the system. The staff here prides themselves on actively contributing to the city's vibrant music and dance culture. Money Mike is part of the Mobile Mondays crew, a weekly party at Bowery Electric dedicated to reviving the spirit of parties such as The Loft, Paradise Garage, and Studio 54. Toshi Moriguchi, aka DJ Monchan, runs DailySession.com, a treasure chest of DJ mixes recorded from some of the best DJs in the world. Norman's, Rockit Scientist, and Big City Records have come and gone in the neighborhood, but A1 has magically emerged as one of the last ones standing. Have a listen and you'll see why we'll still be talking about them in another 20 years.",
+		"location": "New York, NY",
+		"genres": "Funk, Soul, Disco",
+		"images": {
+			"venuePageLargeBanner": "images/venues/a1_store.jpg",
+			"venuePageRightColumnBanner": "images/venues/a1_side.jpg",
+			"homepageVenueBanner": "images/placeholders/homepage_venue_banner_1.jpg",
+			"venueThumbnail": "images/venues/a1_thumb.jpg"
+		},
+		"recommendations": [{
+			"name": "Odyssey (Self Titled)",
+			"url": "http://cratedigger.fm/#/search:artists:Odyssey+(2):masters:85571",
+			"thumbnail": "images/records/odyssey.jpg"
+		}, {
+			"name": "Marvin Gaye - Midnight Love",
+			"url": "http://cratedigger.fm/#/search:artists:Marvin%20Gaye:masters:66820",
+			"thumbnail": "images/records/midnight_love.jpg"
+		}, {
+			"name": "Eddie Kendricks (Self Titled)",
+			"url": "http://cratedigger.fm/#/search:artists:Eddie%20Kendricks:masters:115059",
+			"thumbnail": "images/records/eddie_kendricks.jpg"
+		}, {
+			"name": "One Way feat. Al Hudson (Self Titled)",
+			"url": "http://cratedigger.fm/#/search:artists:One+Way:masters:122509",
+			"thumbnail": "images/records/one_way.jpg"
+		}],
+		"hoursOfOperation": [{
+			"Sunday": [
+			900, 1700]
+		}, {
+			"Monday": [
+			800, 1900]
+		}, {
+			"Tuesday": [
+			800, 1900]
+		}, {
+			"Wednesday": [
+			800, 1900]
+		}, {
+			"Thursday": [
+			800, 1900]
+		}, {
+			"Friday": [
+			1300, 1900]
+		}, {
+			"Saturday": [
+			8, 1900]
+		}]
+	} , {
+		"name": "Detroit Threads",
+		"stationUrl": "http://54.172.191.17:8000/listen",
+		"description": "Here we are in a little town called Hamtramck, seven miles outside Detroit, the birthplace of Techno music. Influenced by YMO, Kraftwerk, Bootsy Collins, Parliament, Prince, and Depeche Mode, the forefathers Juan Atkins, Kevin Saunderson, and Derrick May all started creating tracks together in their Motor City basements. Around the same time, Detroit Threads owner Mikel Smith began selling a single crate of records and a rack of clothes at a flea market in the early 80s, quickly expanding to fill an entire corner of the market. In '97 he opened Threads in a Detroit warehouse and shortly after relocated to its current space in the former Motor Lounge, an institution for local electronic music during the formative years of the fifteen-year-old Detroit Electronic Music Festival now called Movement. DJs and Techno fans from around the world will tell you their pilgrimage wouldn't be complete without a trip to the go-to spot for electronic music (and vintage Detroit/Hamtramck clothing). Decorative vinyls marked with music genre titles– Trance, New House, Progressive House, Acid House, Ghetto Tech, and \"Booty\"– hang suspended above the corresponding collections beneath them. Cyrovac, Moods & Grooves, Docile, and Sound Signature are some of the local labels you'll be hard pressed to find anywhere else (offline at least). Local producers and DJs can be found dropping off new releases or performing a live in-store set.",
+		"location": "Hamtramck, MI",
+		"genres": "Techno, House",
+		"images": {
+			"venuePageLargeBanner": "images/venues/threads_store.jpg",
+			"venuePageRightColumnBanner": "images/venues/threads_side.jpg",
+			"homepageVenueBanner": "images/venues/threads_banner.jpg",
+			"venueThumbnail": "images/venues/threads_thumb.jpg"
+		},
+		"recommendations": [{
+			"name": "Mr. Fingers - Ammnesia",
+			"url": "http://cratedigger.fm/#/search:artists:mr%20fingers:masters:47878",
+			"thumbnail": "images/records/fingers.jpg"
+		}, {
+			"name": "Telex - Looking For Saint Tropez",
+			"url": "http://cratedigger.fm/#/search:artists:telex:masters:12846",
+			"thumbnail": "images/records/telex.jpg"
+		}, {
+			"name": "Andrés & Mike Grant - Moods & Grooves Classics v1",
+			"url": "http://cratedigger.fm/#/search:labels:Moods+&+Grooves:releases:4207312",
+			"thumbnail": "images/records/moods.jpg"
+		}, {
+			"name": "Mike Huckaby - Baseline '87",
+			"url": "http://cratedigger.fm/#/search:artists:mike%20huckaby:releases:3161099",
+			"thumbnail": "images/records/huckaby.jpg"
+		}],
+		"hoursOfOperation": [{
+			"Sunday": [
+			900, 1700]
+		}, {
+			"Monday": [
+			800, 1900]
+		}, {
+			"Tuesday": [
+			800, 1900]
+		}, {
+			"Wednesday": [
+			800, 1900]
+		}, {
+			"Thursday": [
+			800, 1900]
+		}, {
+			"Friday": [
+			1100, 1900]
+		}, {
+			"Saturday": [
+			8, 1900]
+		}]
+	},	{
+			"name": "Abraço Espresso",
+			"stationUrl": "http://54.174.96.188:8000/listen",
+			"description" : "\"If Amoeba would've opened five years earlier I probably never would've come to New York,\" says Jamie McCormick, owner of Abraço. \"The only reason I came here was to look for singles that I couldn't find in the Bay Area.\" As a veteran barista from Cafe Mediterraneum in Berkeley, CA, McCormick prides himself not only on making the best Cortado in the city, but also curating some of the best music played inside its miniature East Village storefront. \"Brazilian pop from early-mid 70s epitomizes the vibe here,\" he explains. In fact the name Abraço comes from the whimsical 1969 Gilberto Gil song, \"Aquele Abraço.\" The store, which comfortably fits around six grown coffee sippers at a time, is marked by its sexy neon sign and outdoor wooden table and bench. It offers a fully-immersive experience, with delicious baked goods including olive oil cake, babkas, and scones. As far as records go, Charles Mingus, The Meters, Curtis Mayfield, Tim Maia, Horace Silver, and Donald Byrd are all fair game...",
+			"location": "New York, NY",
+			"genres": "Brazilian Pop, Jazz, R&B",
+			"images": {
+				"venuePageLargeBanner": "images/venues/abraco.jpg",
+				"venuePageRightColumnBanner": "images/venues/abraco_side.jpg",
+				"homepageVenueBanner": "images/venues/abraco_banner.jpg",
+				"venueThumbnail": "images/venues/abraco_thumb.jpg"
+			},
+			"recommendations": [{
+				"name": "Gilberto Gil - Luar",
+				"url": "http://cratedigger.fm/#/search:artists:gilberto%20gil:masters:190613",
+				"thumbnail": "images/records/gil.jpg"
+			}, {
+				"name": "Tim Maia - Reecontro",
+				"url": "http://cratedigger.fm/#/search:artists:tim%20maia:masters:563998",
+				"thumbnail": "images/records/maia.jpg"
+			}, {
+				"name": "Brenton Wood - Oogum Boogum",
+				"url": "http://cratedigger.fm/#/search:artists:brenton%20wood:masters:352957",
+				"thumbnail": "images/records/wood.jpg"
+			}, {
+				"name": "10cc - Deceptive Bends",
+				"url": "http://cratedigger.fm/#/search:artists:10cc:masters:30521",
+				"thumbnail": "images/records/10cc.jpg"
+			}],
+			"hoursOfOperation": [{
+				"Sunday": [
+				900, 1700]
+			}, {
+				"Monday": [
+				800, 1900]
+			}, {
+				"Tuesday": [
+				800, 1900]
+			}, {
+				"Wednesday": [
+				800, 1900]
+			}, {
+				"Thursday": [
+				800, 1900]
+			}, {
+				"Friday": [
+				800, 1900]
+			}, {
+				"Saturday": [
+				8, 1900]
+			}]
+		}]
 }

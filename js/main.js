@@ -23,9 +23,8 @@ $(document).ready(function() {
 		$("body").css('margin-bottom', '50px');
 		$radioPlayButtonEl = $('#radio-play');
 		if($radioPlayButtonEl.hasClass('icon-play-arrow')){
-			$radioPlayEl.removeClass('icon-play-arrow').addClass('icon-pause')
+			$radioPlayButtonEl.removeClass('icon-play-arrow').addClass('icon-pause')
 		}
-
 		playVenueRadioStation(station.substring(1));
 	});
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 19, ../sass/partials/_mixins.scss */
 .station-info {
   display: table-row;
@@ -704,4 +705,47 @@ hr {
 /* line 564, ../sass/styles.scss */
 .hidden {
   display: none;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* line 575, ../sass/styles.scss */
+.spinner {
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
+}
+/* line 580, ../sass/styles.scss */
+.spinner img {
+  opacity: 0.05;
+}
+
+/* line 585, ../sass/styles.scss */
+.spinner:before {
+  content: 'Loading…';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+/* line 596, ../sass/styles.scss */
+.spinner:not(:required):before {
+  content: '';
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-top-color: rgba(0, 0, 0, 0.6);
+  animation: spinner .6s linear infinite;
+  -webkit-animation: spinner .6s linear infinite;
 }

@@ -1,6 +1,13 @@
 $(document).ready(function() {
 	var audioIsPlaying = false // False for pause/stop, True for playing
 	var $audioEl = document.getElementById('radio-player');
+
+
+	$audioEl.oncanplay = function (event) {
+		$('#thumnail-venue-wrapper div').removeClass('spinner')
+	};
+
+
 	var tempVolume = null;
 	var activeVenue = null;
 
@@ -115,6 +122,7 @@ $(document).ready(function() {
 		$('#radio-station-name').text(activeVenue.name);
 		$('#thumnail-venue-wrapper img').attr('src', activeVenue.images.venueThumbnail);
 		$('#radio-player').attr('src', activeVenue.stationUrl);
+		$('#thumnail-venue-wrapper div').addClass('spinner')
 		$audioEl.pause();
 		$audioEl.play();
 	}

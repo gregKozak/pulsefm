@@ -64,7 +64,7 @@ function venueIsOpen(hoursOfOperation) {
     var closeTime = hoursOfOperation[1];
 
     var d = new Date()
-    var currMilitaryTime =  "" +  d.getHours() + d.getMinutes();
+    var currMilitaryTime =  "" +  d.getUTCHours() + d.getUTCMinutes();
     currMilitaryTime = parseInt(currMilitaryTime);
 
     var isAfterOpenTime = currMilitaryTime > openTime ? true : false;

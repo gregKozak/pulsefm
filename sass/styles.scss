@@ -412,6 +412,7 @@ hr {
 	font-size: 2rem;
 	cursor: pointer;
 	margin-left:30px;
+	display: none;
 }
 #radio-volume {
 	@include inline-block;
@@ -419,6 +420,7 @@ hr {
 	width:20%;
 	height:100%;
 	overflow:hidden;
+  	display: none;
 }
 
 #thumnail-venue-wrapper {
@@ -480,6 +482,10 @@ hr {
 		h3 {
 			text-align:left;
 		}
+	}
+
+ 	#radio-volume-icon, #radio-volume {
+	  display: inline-block;
 	}
 }
 

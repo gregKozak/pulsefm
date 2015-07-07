@@ -749,3 +749,16 @@ hr {
   animation: spinner .6s linear infinite;
   -webkit-animation: spinner .6s linear infinite;
 }
+
+.contact{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+@media(min-width: 550px){
+	
+	.contact{
+	top:20px;
+}
+
